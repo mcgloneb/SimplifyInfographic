@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     viewBox="0 0 192 192" style="enable-background:new 0 0 192 192;" xml:space="preserve">
+<g id="cloudBack">
+    <circle id="cloudDotLo" style="fill:#CAD9DE;" cx="19.5" cy="127.5" r="10.5"/>
+    <circle id="couldDotHi" style="fill:#CAD9DE;" cx="39" cy="105" r="12"/>
+    <ellipse id="cloud" style="fill:#CAD9DE;" cx="52.5" cy="42" rx="52.5" ry="42"/>
+</g>
+<path id="cloudFront" style="fill:#F29111;" d="M180,66H72c-6.6,0-12,5.4-12,12v66c0,6.6,5.4,12,12,12h48.1l36,36v-30
+    c0-3.3,2.7-6,6-6H180c6.6,0,12-5.4,12-12V78C192,71.4,186.6,66,180,66z"/>
+<g id="clippeddots">
+    <defs>
+        <rect id="clipForDots" x="19" y="18" width="66" height="47"/>
+    </defs>
+    <clipPath id="clipForDots_1_">
+        <use xlink:href="#clipForDots"  style="overflow:visible;"/>
+    </clipPath>
+    <circle id="dot1" style="clip-path:url(#clipForDots_1_);fill:#FFFFFF;" cx="28.5" cy="42" r="7.5"/>
+    <circle id="dot2" style="clip-path:url(#clipForDots_1_);fill:#FFFFFF;" cx="52.5" cy="42" r="7.5"/>
+    <circle id="dot3" style="clip-path:url(#clipForDots_1_);fill:#FFFFFF;" cx="76.5" cy="42" r="7.5"/>
+</g>
+<g id="clippedQuotes">
+    <defs>
+        <rect id="clipForQuotes" x="90.5" y="86.8" width="71.2" height="46.8"/>
+    </defs>
+    <clipPath id="clipForQuotes_1_">
+        <use xlink:href="#clipForQuotes"  style="overflow:visible;"/>
+    </clipPath>
+    <path id="quote2" style="clip-path:url(#clipForQuotes_1_);fill:#FFFFFF;" d="M130.5,95v17c0,1.1,0.9,2,2,2h8c1.1,0,2,0.9,2,2v11
+        c0,1.1,0.9,2,2,2h2.6c0.8,0,1.6-0.5,1.9-1.3l5.5-13.7V95c0-1.1-0.9-2-2-2h-20C131.4,93,130.5,93.9,130.5,95z"/>
+    <path id="quote1" style="clip-path:url(#clipForQuotes_1_);fill:#FFFFFF;" d="M97.5,95v17c0,1.1,0.9,2,2,2h8c1.1,0,2,0.9,2,2v11
+        c0,1.1,0.9,2,2,2h2.6c0.8,0,1.6-0.5,1.9-1.3l5.5-13.7V95c0-1.1-0.9-2-2-2h-20C98.4,93,97.5,93.9,97.5,95z"/>
+</g>
+</svg>

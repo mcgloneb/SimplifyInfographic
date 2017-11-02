@@ -1,0 +1,167 @@
+@mixin screenSm {
+    @media screen and (min-width: $bpSmall) {
+        @content;
+    }
+}
+@mixin screenMd {
+    @media screen and (min-width: $bpMed) {
+        @content;
+    }
+}
+@mixin screenLg {
+    @media screen and (min-width: $bpLarge) {
+        @content;
+    }
+}
+@mixin screenXlg {
+    @media screen and (min-width: $bpXLarge) {
+        @content;
+    }
+}
+
+/**
+ * Display consitent padding
+ */
+
+@mixin padding($type) {
+    
+    @if $type == body {
+        padding: $paddingSmallV $paddingSmallH;
+    } @else if $type == header {
+        padding: ($paddingSmallV/2) $paddingSmallH;
+    }
+
+    @include screenSm {    
+        @if $type == body {
+            padding: $paddingMedV $paddingMedH;
+        } @else if $type == header {
+            padding: ($paddingMedV/2) $paddingMedH;
+        }
+
+    }
+
+    @include screenLg {    
+        @if $type == body {
+            padding: $paddingLargeV $paddingLargeH;
+        } @else if $type == header {
+            padding: ($paddingLargeV/2) $paddingLargeH;
+        }
+    }
+
+}
+
+///
+/// Viewport sized typography with minimum and maximum values
+///
+/// @author Eduardo Boucas (@eduardoboucas)
+///
+/// @param {Number}   $responsive  - Viewport-based size
+/// @param {Number}   $min         - Minimum font size (px)
+/// @param {Number}   $max         - Maximum font size (px)
+///                                  (optional)
+/// @param {Number}   $fallback    - Fallback for viewport-
+///                                  based units (optional)
+///
+/// @example scss - 5vw font size (with 50px fallback), 
+///                 minumum of 35px and maximum of 150px
+///  @include responsiveFont(5vw, 35px, 150px, 50px);
+///
+@mixin responsiveFont($responsive, $min, $max: false, $fallback: false) {
+  $responsive-unitless: $responsive / ($responsive - $responsive + 1);
+  $dimension: if(unit($responsive) == 'vh', 'height', 'width');
+  $min-breakpoint: $min / $responsive-unitless * 100;
+  
+  @media (max-#{$dimension}: #{$min-breakpoint}) {
+    font-size: $min;
+  }
+  
+  @if $max {
+    $max-breakpoint: $max / $responsive-unitless * 100;
+    
+    @media (min-#{$dimension}: #{$max-breakpoint}) {
+      font-size: $max;
+    }
+  }
+  
+  @if $fallback {
+    font-size: $fallback;
+  }
+  
+  font-size: $responsive;
+}
+
+
+@mixin fontSize($size) {
+    @if $size == sm {
+
+        font-size: 2.5vmin;
+
+        @include screenSm {
+            font-size: 1.5vmin;
+        }
+        
+        @include screenMd {
+            font-size: 1rem;
+        }
+
+
+    } @else if $size == md {
+        
+        font-size: 4.5vmin;
+
+        @include screenSm {
+            font-size: 2.5vmin;
+        }
+        @include screenMd {
+            font-size: 1.4rem;
+        }
+        @include screenXlg {
+            font-size: 1.5rem;
+        }
+
+
+
+    } @else if $size == lg {
+
+        font-size: 4.5vmin;
+
+        @include screenSm {
+            font-size: 3vmin;
+        }
+        @include screenMd {
+            font-size: 1.5rem;
+        }
+        @include screenXlg {
+            font-size: 1.8rem;
+        }
+
+    } @else if $size == xl {
+
+        font-size: 30vmin;
+
+        @include screenSm {
+            font-size: 18vmin;
+        }
+        @include screenMd {
+            @include responsiveFont(17vw, 140px, 160px, 140px);
+        }
+        @include screenLg {
+            @include responsiveFont(11.5vw, 100px, 130px, 100px);
+        }
+        @include screenXlg {
+            @include responsiveFont(10.5vw, 120px, 150px, 120px);
+        }
+
+
+
+    } @else {
+        font-size: 1rem;
+    }
+}
+
+@mixin flexCenter {
+    @include screenMd {
+        display: flex;
+        align-items: center;
+    }
+}

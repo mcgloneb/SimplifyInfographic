@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" id="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=0">
+        <title></title>
+
+        <style type="text/css">
+
+
+            .button {
+              text-align: center;
+              text-decoration: none;
+              position: relative;
+              text-align: center;
+              display: inline-block;
+              padding: 15px 60px;
+              position: relative;
+              font-size: 4.5vmin;
+              font-weight: bold; }
+              @media screen and (min-width: 576px) {
+                .button {
+                  font-size: 3vmin; } }
+              @media screen and (min-width: 769px) {
+                .button {
+                  font-size: 1.5rem; } }
+              @media screen and (min-width: 1200px) {
+                .button {
+                  font-size: 1.8rem; } }
+              @media screen and (min-width: 992px) {
+                .button {
+                  padding: 15px 0;
+                  display: block; } }
+              .button:after {
+                content: '';
+                display: block;
+                position: absolute;
+                width: 18px;
+                height: 15px;
+                top: 50%;
+                right: 15px;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-image: url(../../images/svg/arrow.svg);
+                transform: translateY(-50%); }
+                @media screen and (min-width: 992px) {
+                  .button:after {
+                    width: 23px;
+                    height: 19px; } }
+              .button__red {
+                background-color: #ec1f26;
+                color: #f8f8f8; }
+                .button__red:focus {
+                  background-color: #ec1f26; }
+                .button__red:hover {
+                  background-color: #df131a; }
+                .button__red:active {
+                  background-color: #c71117;
+                  transform: translateY(1px); }
+
+            
+
+        </style>
+    </head>
+
+    <body>
+
+
+            <div class="row">
+                <div class="col-sm-12 col-lg-4">
+                    <a href="#" class="button button__red"><span>Read the report</span></a>
+                </div>
+                <div class="col-sm-12 col-lg-8">                   
+                        Read the full report to find out more, and take a checklist that can help you build your own action plan to transform CX.
+                </div>
+            </div>
+
+
+    </body>
+</html>

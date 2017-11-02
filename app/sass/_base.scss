@@ -1,0 +1,45 @@
+html {
+    font-size: $mobileFontSize ;
+    box-sizing: border-box;
+
+    @include screenMd {
+        font-size: $desktopFontSize;
+    }
+}
+
+body {
+    background-color: $backgroundColour ;
+    padding: 0 15px;
+    overflow-x: hidden;
+    @include screenMd {
+        padding: 0;
+    }
+}
+
+* {
+    box-sizing: inherit;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    a {
+        display: inline-block;
+        max-width: 100%;
+        background-image: url(../../images/svg/logo.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;   
+        height: 42px;
+        width: 115px;         
+        
+    
+        @include screenMd {          
+            height: 70px;
+            width: 191px;         
+        }
+    }
+}

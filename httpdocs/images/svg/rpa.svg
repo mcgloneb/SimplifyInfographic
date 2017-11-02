@@ -1,0 +1,117 @@
+<svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     viewBox="0 0 207 207" style="enable-background:new 0 0 207 207;" xml:space="preserve">
+<style type="text/css">
+    .svg_laptop_0{fill:#BDE6EE;}
+    .svg_laptop_1{opacity:0;fill:#BDE6EE;}
+    .svg_laptop_2{fill:#CBCECE;}
+    .svg_laptop_3{fill:#939699;}
+    .svg_laptop_4{fill:#A6A9AB;}
+    .svg_laptop_5{fill:#F29111;}
+    .svg_laptop_6{opacity:0.2;fill:#D3EEF4;}
+</style>
+<defs>
+     <clipPath id="clipmask1">
+        <rect id="clipp" x="40.5" y="46.5" class="svg_laptop_1" width="126" height="72"/>
+    </clipPath>
+</defs>
+
+<g  clip-path="url(#clipmask1)">
+    <rect id="bluebg" x="40.5" y="46.5" class="svg_laptop_0" width="126" height="72"/>
+
+    <g id="svgComputerArrow">
+
+
+        <rect  x="90" y="52.5" class="svg_laptop_5" width="27" height="6" ></rect>
+        <rect x="90" y="61.5" class="svg_laptop_5" width="27" height="9"/>
+        <path class="svg_laptop_5" d="M117,88.5v-15H90v15H76.5l21.9,21.9c2.8,2.8,7.4,2.8,10.2,0l21.9-21.9H117z" clip-path="url(#clipmask1)" />
+
+    </g>
+
+
+</g>
+<g id="laptop">
+  
+    
+    <path class="svg_laptop_2" d="M169.5,124.5h-132c-1.9,0-3.7,0.9-4.8,2.4L7.5,160.5h192l-25.2-33.6C173.2,125.4,171.4,124.5,169.5,124.5z"/>
+    <path class="svg_laptop_3" d="M169.5,40.5h-132c-1.7,0-3,1.3-3,3v78c0,1.7,1.3,3,3,3h132c1.7,0,3-1.3,3-3v-78
+        C172.5,41.8,171.2,40.5,169.5,40.5z M166.5,118.5h-126v-72h126V118.5z"/>
+    <path class="svg_laptop_4" d="M7.5,160.5h192l0,0v3c0,1.7-1.3,3-3,3h-186c-1.7,0-3-1.3-3-3V160.5L7.5,160.5z"/>
+</g>
+<path id="touchpad" class="svg_laptop_4" d="M131.1,147.7c-0.4-1.3-1.5-2.2-2.9-2.2H78.8c-1.3,0.1-2.5,1-2.9,2.2l-1.9,7.5
+    c-0.3,0.9,0.2,1.9,1.1,2.2c0.2,0.1,0.4,0.1,0.6,0.1h55.4c0.9,0.1,1.8-0.7,1.8-1.6c0-0.2,0-0.4-0.1-0.6L131.1,147.7z"/>
+<g id="keyboard">
+    <polygon class="svg_laptop_3" points="47.7,130.9 42.8,130.9 44.7,128.4 49.5,128.4    "/>
+    <polygon class="svg_laptop_3" points="54.2,130.9 49.3,130.9 51,128.4 55.8,128.4  "/>
+    <polygon class="svg_laptop_3" points="60.7,130.9 55.8,130.9 57.3,128.4 62,128.4  "/>
+    <polygon class="svg_laptop_3" points="67.1,130.9 62.2,130.9 63.5,128.4 68.3,128.4    "/>
+    <polygon class="svg_laptop_3" points="73.6,130.9 68.7,130.9 69.8,128.4 74.6,128.4    "/>
+    <polygon class="svg_laptop_3" points="80.1,130.9 75.2,130.9 76.1,128.4 80.8,128.4    "/>
+    <polygon class="svg_laptop_3" points="86.5,130.9 81.6,130.9 82.3,128.4 87.1,128.4    "/>
+    <polygon class="svg_laptop_3" points="93,130.9 88.1,130.9 88.6,128.4 93.4,128.4  "/>
+    <polygon class="svg_laptop_3" points="99.5,130.9 94.6,130.9 94.9,128.4 99.6,128.4    "/>
+    <polygon class="svg_laptop_3" points="106,130.9 101,130.9 101.1,128.4 105.9,128.4    "/>
+    <polygon class="svg_laptop_3" points="112.4,130.9 107.5,130.9 107.4,128.4 112.1,128.4    "/>
+    <polygon class="svg_laptop_3" points="118.9,130.9 114,130.9 113.6,128.4 118.4,128.4  "/>
+    <polygon class="svg_laptop_3" points="125.4,130.9 120.5,130.9 119.9,128.4 124.7,128.4    "/>
+    <polygon class="svg_laptop_3" points="131.8,130.9 126.9,130.9 126.2,128.4 130.9,128.4    "/>
+    <polygon class="svg_laptop_3" points="138.3,130.9 133.4,130.9 132.4,128.4 137.2,128.4    "/>
+    <polygon class="svg_laptop_3" points="144.8,130.9 139.9,130.9 138.7,128.4 143.5,128.4    "/>
+    <polygon class="svg_laptop_3" points="151.3,130.9 146.3,130.9 145,128.4 149.7,128.4  "/>
+    <polygon class="svg_laptop_3" points="157.7,130.9 152.8,130.9 151.3,128.4 156,128.4  "/>
+    <polygon class="svg_laptop_3" points="164.2,130.9 159.3,130.9 157.5,128.4 162.3,128.4    "/>
+    <polygon class="svg_laptop_3" points="45.2,134.4 40,134.4 42.1,131.7 47.1,131.7  "/>
+    <polygon class="svg_laptop_3" points="51.9,134.4 46.8,134.4 48.7,131.7 53.7,131.7    "/>
+    <polygon class="svg_laptop_3" points="58.7,134.4 53.6,134.4 55.2,131.7 60.2,131.7    "/>
+    <polygon class="svg_laptop_3" points="65.5,134.4 60.3,134.4 61.8,131.7 66.7,131.7    "/>
+    <polygon class="svg_laptop_3" points="72.2,134.4 67.1,134.4 68.3,131.7 73.3,131.7    "/>
+    <polygon class="svg_laptop_3" points="79,134.4 73.9,134.4 74.8,131.7 79.8,131.7  "/>
+    <polygon class="svg_laptop_3" points="85.8,134.4 80.6,134.4 81.4,131.7 86.4,131.7    "/>
+    <polygon class="svg_laptop_3" points="92.5,134.4 87.4,134.4 87.9,131.7 92.9,131.7    "/>
+    <polygon class="svg_laptop_3" points="99.3,134.4 94.2,134.4 94.5,131.7 99.4,131.7    "/>
+    <polygon class="svg_laptop_3" points="106.1,134.4 100.9,134.4 101,131.7 106,131.7    "/>
+    <polygon class="svg_laptop_3" points="112.8,134.4 107.7,134.4 107.6,131.7 112.5,131.7    "/>
+    <polygon class="svg_laptop_3" points="119.6,134.4 114.5,134.4 114.1,131.7 119.1,131.7    "/>
+    <polygon class="svg_laptop_3" points="126.4,134.4 121.2,134.4 120.6,131.7 125.6,131.7    "/>
+    <polygon class="svg_laptop_3" points="133.1,134.4 128,134.4 127.2,131.7 132.1,131.7  "/>
+    <polygon class="svg_laptop_3" points="139.9,134.4 134.8,134.4 133.7,131.7 138.7,131.7    "/>
+    <polygon class="svg_laptop_3" points="146.7,134.4 141.5,134.4 140.3,131.7 145.2,131.7    "/>
+    <polygon class="svg_laptop_3" points="153.4,134.4 148.3,134.4 146.8,131.7 151.8,131.7    "/>
+    <polygon class="svg_laptop_3" points="160.2,134.4 155.1,134.4 153.4,131.7 158.3,131.7    "/>
+    <polygon class="svg_laptop_3" points="167,134.4 161.8,134.4 159.9,131.7 164.9,131.7  "/>
+    <polygon class="svg_laptop_3" points="42.4,138.3 37,138.3 39.3,135.3 44.5,135.3  "/>
+    <polygon class="svg_laptop_3" points="49.5,138.3 44.1,138.3 46.2,135.3 51.3,135.3    "/>
+    <polygon class="svg_laptop_3" points="56.6,138.3 51.2,138.3 53,135.3 58.2,135.3  "/>
+    <polygon class="svg_laptop_3" points="63.7,138.3 58.3,138.3 59.8,135.3 65,135.3  "/>
+    <polygon class="svg_laptop_3" points="70.8,138.3 65.4,138.3 66.7,135.3 71.9,135.3    "/>
+    <polygon class="svg_laptop_3" points="77.8,138.3 72.4,138.3 73.5,135.3 78.7,135.3    "/>
+    <polygon class="svg_laptop_3" points="84.9,138.3 79.5,138.3 80.4,135.3 85.6,135.3    "/>
+    <polygon class="svg_laptop_3" points="92,138.3 86.6,138.3 87.2,135.3 92.4,135.3  "/>
+    <polygon class="svg_laptop_3" points="99.1,138.3 93.7,138.3 94.1,135.3 99.3,135.3    "/>
+    <polygon class="svg_laptop_3" points="106.2,138.3 100.8,138.3 100.9,135.3 106.1,135.3    "/>
+    <polygon class="svg_laptop_3" points="113.3,138.3 107.9,138.3 107.8,135.3 112.9,135.3    "/>
+    <polygon class="svg_laptop_3" points="120.4,138.3 115,138.3 114.6,135.3 119.8,135.3  "/>
+    <polygon class="svg_laptop_3" points="127.5,138.3 122.1,138.3 121.4,135.3 126.6,135.3    "/>
+    <polygon class="svg_laptop_3" points="134.5,138.3 129.2,138.3 128.3,135.3 133.5,135.3    "/>
+    <polygon class="svg_laptop_3" points="141.6,138.3 136.3,138.3 135.1,135.3 140.3,135.3    "/>
+    <polygon class="svg_laptop_3" points="148.7,138.3 143.3,138.3 142,135.3 147.2,135.3  "/>
+    <polygon class="svg_laptop_3" points="155.8,138.3 150.4,138.3 148.8,135.3 154,135.3  "/>
+    <polygon class="svg_laptop_3" points="162.9,138.3 157.5,138.3 155.6,135.3 160.8,135.3    "/>
+    <polygon class="svg_laptop_3" points="173.3,142.5 167.7,142.5 162.5,135.3 167.7,135.3    "/>
+    <polygon class="svg_laptop_3" points="39.3,142.5 33.7,142.5 36.2,139.3 41.7,139.3    "/>
+    <polygon class="svg_laptop_3" points="46.8,142.5 41.1,142.5 43.4,139.3 48.8,139.3    "/>
+    <polygon class="svg_laptop_3" points="136.1,142.5 48.6,142.5 50.6,139.3 134.9,139.3  "/>
+    <polygon class="svg_laptop_3" points="143.5,142.5 137.9,142.5 136.6,139.3 142.1,139.3    "/>
+    <polygon class="svg_laptop_3" points="151,142.5 145.3,142.5 143.8,139.3 149.3,139.3  "/>
+    <polygon class="svg_laptop_3" points="158.4,142.5 152.8,142.5 151,139.3 156.4,139.3  "/>
+    <polygon class="svg_laptop_3" points="165.9,142.5 160.2,142.5 158.2,139.3 163.6,139.3    "/>
+</g>
+<polygon id="glare" class="svg_laptop_6" points="40.5,46.5 40.5,118.5 64.5,118.5 136.5,46.5 "/>
+    
+    <animate 
+    attributeName="y"
+    from="10"
+    to="150" 
+    dur="5s"
+    begin="1s"
+    fill="freeze"  />
+</svg>       

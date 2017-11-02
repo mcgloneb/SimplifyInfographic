@@ -1,0 +1,925 @@
+.scene {
+    margin-top: 50px;
+    .scene__header {
+        @include padding('header');
+        @include fontSize('lg');
+        font-weight: bold;
+        text-transform: uppercase;  
+        background-color: $headerBackgroundeaderColour;
+        color: $headerFontColour;
+
+        &--align-center {
+            text-align: center;
+        }
+
+        &--secondary {
+            background-color: $headerBackgroundeaderColour;
+            color: $headerFontColour;
+        }
+    }
+
+    .scene__body {
+        @include padding('body');
+        overflow-y: hidden;
+        position: relative;
+        @include fontSize('md');
+        line-height: 1.5;
+        background-color: $sceneBackgroundColour ;
+        color: $sceneFontColour;
+
+        &--secondary {
+            background-color: $headerBackgroundeaderColour ;
+            color: $headerFontColour;
+        }
+
+       .scene__counter {
+            
+            color: $secondarySceneBackgroundColour;
+            font-style: italic;
+            @include fontSize('xl');
+            
+            display: block;
+            text-align: center;
+            font-weight: bold;
+            line-height: 1;
+
+            @include flexCenter;
+
+
+            @include screenMd {
+                text-align: left;
+            }
+
+            span {
+                display: block;
+                width: 100%;
+            }
+
+        }
+
+        .font-large {
+            @include fontSize('lg');
+        }
+
+        &.no-padding {
+            padding-top: 0px;
+            padding-bottom: 10px;
+        }
+
+    }
+    &--bordered {
+        border-style:solid;
+        border-color: $grey;
+        border-width: 1px 0 0 0;
+    }
+    &--no-margin {
+        margin-top: 0;
+    }
+    &--small-margin {
+        margin-top: 25px;
+    }
+    &--large-margin {
+        margin-top: 75px;
+    }
+    &--fullwidth {
+        background-color: $white;
+    }
+
+    &--fullwidth-footer {
+        background-color: $oracleRed;
+        color: $white;
+        .scene__body {
+            background-color: transparent;
+            color: #FFF;
+            padding: 45px 0;
+        }
+    }
+
+    &--fullwidth-footer-button {
+        background-color: $charcoal;
+        color: $white;
+    }
+
+    &.scene__intrographic {
+        img { 
+            width: 100%; 
+            max-width: 100%;
+        }
+    }
+
+    &.scene__intro {
+         .scene__graphic {
+
+
+            @extend .col-12;
+            @extend .col-sm-4;
+            @extend .col-xl-3;
+            
+            @extend .push-sm-8;
+            @extend .push-xl-9; 
+
+            position: relative;
+
+            @include screenSm {
+                display: flex;
+            }
+
+            svg {               
+                
+                width: 96%;
+                display: block;
+                margin-left: 4%;
+
+            }     
+        }
+
+        .scene__copy {
+
+
+            @extend .col-12;
+            @extend .col-sm-8;
+            @extend .col-xl-9;
+            
+            @extend .pull-sm-4;
+            @extend .pull-xl-3; 
+            
+            padding-top: 15px;
+            padding-bottom: 15px;
+
+            @include screenSm {
+                padding-top: 0px;
+                padding-bottom: 0px;
+            }
+
+
+        }
+    }
+
+    .scene__introline {
+        @extend .col-12;
+        @extend .scene__header;
+        background-color: transparent;
+        color: $brown;
+        @extend .scene__header--align-center;
+
+        // position: relative;
+
+        // &:before, &:after {
+        //     content: '';
+        //     display: block;
+        //     width: 50%;
+        //     height: 100%;
+        //     position: absolute;
+        //     background-color: $red;
+        //     top: 0;
+        // }
+
+        // &:before {
+        //     left: 1px;
+        //     transform: translateX(-100%);
+        // }
+
+        // &:after {
+        //     right: 0;
+        //     transform: translateX(100%);
+        // }
+
+        // &:before, &:after {
+        //     @include screenMd {
+        //         display: none;            
+        //     }
+        // }
+        &--footer {
+            background-color: $maroon;
+        }
+
+    }
+
+    &.scene__one {
+        background-color: $white;
+        padding: 40px 0 0 0;
+        @include fontSize('md');
+        .scene__graphic {
+            
+            svg {               
+                
+                width: 80%;
+                display: block;
+                margin: 0 auto;
+
+                @include screenSm {
+                    width: 70%;
+                }
+                @include screenLg {
+                    width: 90%;
+                    margin: 0;
+                }
+             
+            }   
+
+            img {               
+                
+                width: 60%;
+                max-width: 260px;
+                display: block;
+                margin: 0 auto;
+                padding: 20px 0;
+
+                @include screenSm {
+                    width: 70%;
+                }
+                @include screenLg {
+                    width: 70%;
+                    margin: 0;
+                }
+             
+            }   
+
+        }
+
+        .scene__copy {
+
+           // @include flexCenter;
+            
+            .row:first-of-type {
+                margin-top: 25px;
+                margin-bottom: 25px;
+            }
+            
+        }
+
+           .chart {
+              position: relative;
+              display: inline-block;
+              text-align: center;
+              width: 100%;
+
+                figcaption {
+                  position: absolute;
+                  width: 100%;
+                  height: 50px;
+                  line-height: 200px;
+                  left: 0;
+                  text-align: center;
+                  font-size: 2em;
+                  color: $oracleRed;
+                  font-style: italic;
+                  font-weight: bold;
+                }
+
+                .outer {
+                  stroke:url(#MyGradient);
+                  fill: transparent;
+                  stroke-width: 20;
+                  stroke-dasharray: 534;
+                  transition: stroke-dashoffset 1s;
+                  -webkit-animation-play-state: running;
+                  /* firefox bug fix - won't rotate at 90deg angles */
+                  -moz-transform: rotate(-89deg) translateX(-190px);
+                  visibility: hidden;
+                }
+
+            }
+
+            p {
+                color: $blue; 
+
+                span {
+                    font-size: 2em;
+                    font-style: italic;
+                    font-weight: bold;
+                }
+            }
+
+            .chart-text {
+                margin-top: 50px;
+            }
+
+            .static-chart {
+                position: absolute;
+                width: 100%;
+                text-align: center;
+                right: 0px;
+                top: 0px;
+                    .outer {              
+                      stroke:#ebebeb;
+                      fill: transparent;
+                      stroke-width: 20;
+                    }
+            }
+
+            .chart[data-percent='71'] .play-animation .outer {
+              visibility: visible;
+              stroke-dashoffset: 155;
+              -webkit-animation: show71 2s;
+              animation: show71 2s;
+            }
+
+            .chart[data-percent='32'] .play-animation .outer {
+              visibility: visible;
+              stroke-dashoffset: 365;
+              -webkit-animation: show32 2s;
+              animation: show32 2s;
+            }
+
+            figure { 
+                margin: 0; 
+            }
+
+            .flex-container {
+                display: flex;
+                align-items: center;
+            }
+    }
+
+    &.scene__two {
+
+        .scene__graphic {
+
+            padding: 5% 0;
+
+            @include screenLg {
+                padding: 2% 0;
+            }
+
+              svg {               
+                
+                width: 80%;
+                display: block;
+                margin: 0 auto;
+
+                @include screenSm {
+                    width: 70%;
+                }
+                @include screenLg {
+                    width: 90%;
+                    margin-top: 4%;
+                }
+             
+            }   
+
+             img {               
+                
+                width: 80%;
+                max-width: 478px;
+                display: block;
+                margin: 0 auto;
+
+                @include screenSm {
+                    width: 70%;
+                }
+                @include screenLg {
+                    width: 90%;
+                    margin-top: 4%;
+                }
+             
+            }  
+
+        }
+
+        .flex-container {
+            display: flex;
+            align-items: center;
+        }
+
+        p  {
+            color: $blue;
+            span {
+                color: $blue;
+                font-size: 6em;
+                line-height: 100%;
+                font-weight: bold;
+                font-style: italic;
+            }
+        }
+
+    }
+
+
+    &.scene__three {
+        .scene__graphic {
+
+            padding: 5% 0;
+
+            @include screenLg {
+                padding: 2% 0;
+            }
+
+            svg {
+
+                width: 100%;
+                display: block;
+                margin: 0 auto;
+
+                @include screenSm {
+                    width: 80%;
+                }
+                @include screenLg {
+                    width: 100%;
+                }
+
+            }
+        }    
+
+        p  {
+            color: $blue;
+            span {
+                color: $royalBlue;
+                font-size: 3em;
+                font-weight: bold;
+                font-style: italic;
+            }
+            &.line-height-150 {
+                line-height: 150%;
+            }
+        }
+
+        .scene__enterprise {
+            background-size: contain;
+            background-position: right center;
+            background-repeat: no-repeat;
+            p  {
+                color: $blue;
+                span {
+                    color: $blue;
+                    font-size: 2em;
+                    font-weight: bold;
+                    font-style: italic;
+                }
+            }
+        }
+
+        .scene__copy {
+            @include flexCenter;
+
+            .scene__counter {
+                @include screenMd {
+                    text-align: center;
+                }
+                @include screenLg {
+                    text-align: left;
+                }
+            }
+        }    
+
+        .flex-container {
+            display: flex;
+            align-items: center;
+        }
+    }
+    
+    &.scene__four {
+
+        .scene__graphic {
+            
+            text-align: center;   
+            overflow: hidden;  
+            padding-bottom: 5%;
+
+            svg {
+                width: 100%;
+                display: block;
+                margin: 0 auto;
+
+                @include screenSm {
+                    width: 80%;
+                }
+                @include screenLg {
+                    width: 100%;
+                }
+            }
+
+            @include screenLg {
+                padding-bottom: 0;
+            }
+        }
+
+
+
+
+
+
+        .bar__container {
+            width: 18rem;
+            display: block;
+            margin: 0 auto;
+            position: relative;
+            height: 100%;
+            min-height: 250px;
+        }
+
+        .bar {
+            
+            display: inline-block;
+            width: 3rem;
+            position: absolute;
+            bottom: 0;
+            
+            &__one {
+                background-color: #942646;
+                height: 64%;
+                left: 0;
+            }
+            &__two {
+                background-color: #f39220;
+                height: 71%;
+                left: 5rem;
+            }
+            &__three {
+                background-color: #ed1c24;
+                height: 91%;
+                left: 10rem;
+            }
+            &__four {
+                background-color: #8aadbf;
+                height: 91%;
+                left: 15rem;
+            }
+
+        }
+        
+
+        p  {
+            color: $blue;
+            span {
+                font-size: 6em;
+                line-height: 100%;
+                font-weight: bold;
+                font-style: italic;
+            }
+        }
+
+        .scene__callout {
+            color:#FFF; 
+            background-color:#0088a0;
+
+            img, svg { 
+                max-width: 190px;
+            }
+
+        }
+
+        .flex-container {
+            display: flex;
+            align-items: center;
+
+            img {
+                margin: 0 auto;
+            }
+        }
+
+    }
+
+    &.scene__five {
+        
+        .scene__copy {
+
+            @include flexCenter;
+
+            @include screenLg {
+                display: block;
+            }
+
+        }
+
+        .scene__graphic {
+
+            padding-bottom: 5%;
+
+            @include screenLg {
+                padding-bottom: 0;
+            }
+
+
+            svg {
+
+                width: 80%;
+                display: block;
+                margin: 0 auto;
+
+                @include screenSm {
+                    width: 70%;
+                }
+                @include screenLg {
+                    width: 90%;
+                }
+
+            }
+
+
+
+        }
+    }
+
+    &.scene__six {
+
+        .scene__graphic {
+
+            @include screenLg {
+                padding-top: 25px;    
+            }
+
+
+             svg {               
+                
+                width: 80%;
+                display: block;
+                margin: 0 auto;
+
+                @include screenSm {
+                    width: 70%;
+                }
+                @include screenLg {
+                    width: 90%;
+                    margin: 0;
+                }
+             
+            }     
+        }
+        .scene__copy {
+
+            @include flexCenter;
+
+            .row:first-of-type {
+                margin-top: 25px;
+                margin-bottom: 25px;
+            }
+
+        }
+    }
+
+
+    &.scene__seven {
+        
+        font-size: 2.5rem;
+
+
+        .scene__graphic-v2 {
+           @extend .col-12; 
+
+            svg {
+                
+                width: 90%;
+                display: block;
+                margin: 0 auto;
+
+                @include screenSm {
+                    width: 80%;
+                }
+                @include screenMd {
+                    width: 40%;                  
+                }
+            }
+
+        }
+
+        .scene__copy--one-v2 {
+            @extend .col-6; 
+            padding: 0 5% 0 0;
+            transform: translateY(-25px);
+            
+            @include screenSm {
+                padding: 0 10% 0 5%;
+                transform: translateY(-50px);
+            }
+            @include screenLg {
+                padding: 0 10%;
+                transform: translateY(-75px);
+            }
+
+        }
+        
+        .scene__copy--two-v2 {
+            @extend .col-6; 
+            padding: 5% 5% 0 5%;
+            text-align: right;
+            @include screenSm {
+                padding: 5% 0 5% 5%;
+            }
+            @include screenMd {
+                text-align: left;
+                padding: 2% 0 0 10%;
+            }
+            @include screenLg {
+                padding: 2% 10% 0;
+            }
+
+
+        }
+
+        .scene__graphic {
+            
+
+            @extend .col-12;
+
+            margin-top: 15px;
+            padding-bottom: 30vmax;
+            
+            @include screenSm {
+                padding-bottom: 14vh;
+            }
+            @include screenMd {
+                padding-bottom: 20vh;
+            }
+            @include screenLg {
+                padding-bottom: 15vh;
+            }
+            
+            position: relative;
+
+            svg {
+                
+                width: 90%;
+                display: block;
+                margin: 0 auto;
+
+                @include screenSm {
+                    width: 80%;
+                }
+                @include screenMd {
+                    width: 40%;                  
+                }
+
+            }
+
+            .scene__copy--one {
+                
+                left: 15px;
+                position: absolute;
+                width: 45%;
+                top: 55%;
+                display: inline-block;
+                
+
+                @include screenSm {
+                     width: 30%;
+                     top: 60%;
+                }
+                @include screenMd {
+                    width: 40%;
+                    left: 7%;
+                    top: 50%;
+                }
+                @include screenLg {
+                    width: 25%;
+                    left: 12%;
+                    top: 56%;
+                }
+            }
+            
+            .scene__copy--two {
+                
+                left: 50%;
+                position: absolute;
+                width: 45%;
+                top: 62%;
+                display: inline-block;
+                text-align: right;
+                
+                @include screenSm {
+                    width: 50%;
+                    left: 50%;
+                    top: 75%;
+                }
+
+                @include screenMd {
+                    text-align: left;
+                    width: 38%;
+                    left: 58%;
+                    top: 75%;
+                }
+                @include screenLg {
+                    width: 35%;              
+                    left: 62%;
+                    top: 75%;
+                }
+                @include screenXlg {
+                    top: 75%;
+                }
+            }
+        }
+    }
+
+    &.scene__tagline {
+        @include fontSize('md'); 
+        color: $blue;
+        font-weight: bold;
+        text-align: center;
+        @include screenLg {
+            text-align: left;
+        }
+
+    }
+    &.scene__cta {
+        @include fontSize('sm'); 
+        color: $blue;
+
+        .cta__button {
+            @extend .col-12;
+            @extend .col-lg-4;
+            text-align: center;
+        }
+
+        .cta__copy {
+            @extend .col-12;
+            @extend .col-lg-8;
+
+            @include flexCenter;
+            
+            margin-top: 25px;
+            text-align: center;
+            @include screenLg {
+                margin-top: 0;
+                text-align: left;
+            }
+        }
+    }
+
+    &.scene__footer {
+        color: $grey;
+        font-size: 0.8rem;
+
+        .footer__logo {
+            text-align: center;            
+            font-size: 0 !important;   
+            margin-top: 25px; 
+
+            @include screenSm {
+                text-align: right;
+                margin-top: 0;
+            }
+
+            .logo__image {
+                display: inline-block;
+                max-width: 100%;
+                background-image: url(../../images/svg/logo.svg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;   
+                height: 70px;
+                width: 191px;  
+            }
+        }
+    }
+
+
+    // some generic styling for elements within scenes
+
+    ul>li {
+         @include fontSize('lg');
+    }
+
+}
+
+/**
+* Media Queries
+* Don't think this is the right place 
+*/
+
+@media(max-width:767px){
+
+    .scene {
+        &--fullwidth {
+            max-width: 540px;
+        }
+        &--bordered {
+            border: none;
+        }
+
+        &.scene__one {
+
+            .chart-text {
+                margin-top: 0px;
+                padding: 20px 0;
+            }
+
+        }
+    }
+}
+@media(min-width:768px){}
+@media(min-width:992px){}
+@media(min-width:1200px){}
+
+/**
+ * Language variations
+ */
+.de {
+
+    .scene__seven {
+        
+        .scene__copy--one-v2 {
+            max-width: 41.666667%;
+            @include screenMd {
+                max-width: 50%;
+            }
+        }
+        .scene__copy--two-v2 {
+            max-width: 58.33333%;
+            @include screenMd {
+                max-width: 50%;
+            }
+        }
+
+    }
+
+}

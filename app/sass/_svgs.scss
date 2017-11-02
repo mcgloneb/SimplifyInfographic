@@ -1,0 +1,50 @@
+#certStar {
+    transform-origin: 50% 80% !important;    
+}
+
+/** 
+ * Keyboard classes...
+ */
+
+.kb__key {
+    fill: #939699;
+}
+
+.kb__key--pressed {
+    fill: darken(#939699, 25%);
+    transform: translateY(0.2%);
+}
+
+
+/**
+ * Multiple touchpoints
+ * We need to set the transform origin here to override anything GSAP does in it's "magic"...
+ */
+#person_x5F_top_x5F_left {
+    transform-origin:  12% 25% !important;
+}
+
+#peson_x5F_top {
+    transform-origin: 49% 8% !important;
+}
+
+#person_x5F_bot_x5F_right {
+    transform-origin: 90% 64% !important;
+}
+
+#person_x5F_bot {
+    transform-origin: 55% 92% !important;
+}
+
+#person_x5F_bot_x5F_left {
+    transform-origin: 16% 77% !important;
+}
+
+#hero {
+   transform-origin: 50% 50% !important; 
+}
+
+#tick {
+    transform-origin: 70% 30% !important;
+}
+

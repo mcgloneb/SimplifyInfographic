@@ -1,0 +1,35 @@
+@keyframes scrollQuoteDots {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(50%);
+    }
+}
+@keyframes scrollQuoteMarks {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-47%);
+    }
+}
+
+
+@keyframes show71 {
+    from {
+        stroke-dashoffset: 537;
+    }
+    to {
+        stroke-dashoffset: 155;
+    }
+}
+
+@keyframes show32 {
+    from {
+        stroke-dashoffset: 537;
+        }   
+    to {
+        stroke-dashoffset: 365;
+    }
+}

@@ -1,0 +1,43 @@
+// breakpoints a'la bootstrap
+$bpSmall    : 576px;
+$bpMed      : 769px;
+$bpLarge    : 992px;
+$bpXLarge   : 1200px;
+
+$screen-md  : 768px !default;
+
+// font sizing
+$mobileFontSize     : 14px;
+$tabletFontSize     : 14px;
+$desktopFontSize    : 16px;
+
+// spacing
+$paddingSmallV  : 20px;
+$paddingSmallH  : 30px;
+$paddingMedV    : 40px;
+$paddingMedH    : 60px;
+$paddingLargeV  : 45px;
+$paddingLargeH  : 70px;
+
+
+
+// colours
+$white      : #f8f8f8;
+$maroon     : #592439;
+$brown		: #8a331d;
+$blue       : #003e51;
+$red        : #942645;
+$oracleRed  : #ec1f26;
+$grey       : #939699;
+$royalBlue  : #0e6c8e;
+$charcoal   : #4e5052;
+
+// Colour Schemes
+$backgroundColour               : #ffe9ce;
+$headerBackgroundeaderColour    : $brown;
+$headerFontColour               : $white;
+$sceneBackgroundColour          : $white;
+$sceneFontColour                : $blue;
+$secondarySceneBackgroundColour : $white;
+$secondarySceneFontColour       : $blue;
+

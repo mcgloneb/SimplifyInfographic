@@ -1,0 +1,81 @@
+.button {
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+
+    display: inline-block;
+    padding: 15px 30px 15px 15px;
+    position: relative;
+
+    @include fontSize('lg');
+    font-weight: bold;
+
+    @include screenLg {
+        padding: 15px 0;
+        display: block;        
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 18px;
+        height: 15px;
+        top: 50%;
+        right: 10px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(../../images/svg/arrow.svg);
+        transform: translateY(-50%);
+
+        @include screenLg {
+            width: 23px;
+            height: 19px;
+
+        }
+    }
+
+    &__red {
+        background-color: $secondarySceneBackgroundColour;
+        color: $white;
+
+        &:focus {
+            background-color: $secondarySceneBackgroundColour;
+        }
+        &:hover {
+            background-color: darken($secondarySceneBackgroundColour, 5%);
+        }
+        &:active {
+            background-color: darken($secondarySceneBackgroundColour, 10%);
+            transform: translateY(1px);
+        }
+    }
+
+    &__white {
+        background-color: transparent;
+        color: $white;
+        border-style: solid;
+        border-width: 2px;
+        border-color: $white;
+        padding: 15px 55px 15px 15px;
+        display: inline-block;
+
+        &:focus {
+            background-color: $white;
+            color: $charcoal;
+        }
+        &:hover {
+            background-color: $white;
+            color: $charcoal;
+            &:after {
+                background-image: url(../../images/svg/arrow_hover.svg);
+            }
+        }
+        &:active {
+            background-color: $white;
+            color: $charcoal;
+        }
+    }
+
+}
