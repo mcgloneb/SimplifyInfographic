@@ -229,49 +229,68 @@
             <!-- scene four end -->
 
 
-            <!-- scene seven start -->
-            <div class="row scene scene__seven" id="s7">
+            <!-- summary start -->
+            <div class="row scene scene__summary">
                 
-                <div class="col-12 scene__body scene__body--secondary">
+                <div class="col-12 scene__body scene__body--tertiary">
 
                     <div class="row">
                         
-                        <div class="col-4" id="s7_trigger">                            
-                            <h2>IGNORE THIS BIT</h2>            
+                        <div class="col-12 col-md-6 scene__graphic" id="summary_trigger">
+                            <div class="flex-container">
+                                <?php include('./images/svg/summaryIcon2.php'); ?>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 scene__copy">
+                            <div class="flex-container">
+                                <p>Machine learning can simplify your hybrid cloud infrastructure, giving you the freedom to achieve more.</p>                                
+                                <p>It can reach into your huge volumes of complex data and pull out the simple truths on application performance – enabling you to improve employee productivity and optimise the customer experience.</p>
+                            </div>
                         </div>
 
-                        <div class="col-8">
-                            <p>Machine learning can simplify your hybrid cloud infrastructure, giving you the freedom to achieve more.</p>
-                            <p>It can reach into your huge volumes of complex data and pull out the simple truths on application performance – enabling you to improve employee productivity and optimise the customer experience.</p>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- summary end -->
+
+
+        </div>
+
+
+        <!-- call to action -->
+        <div class="cta">
+
+            <div class="cta__summary">
+                <div class="container">
+                    <div class="row summary__body">
+                        <div class="col-12 col-lg-7">
+                            Read our eBook, 'A New Shared Vision', to discover the potential to innovate through RPA and AI in shared services at your organisation. 
                         </div>
-
-                    </div>
-
-                </div>
-            </div>
-            <!-- scene seven end -->
-
-        </div>
-
-        <!-- closing comments start -->
-        <div class="container-fluid scene--fullwidth-footer">
-            <div class="container scene">
-                <div class="row scene__body">
-                    <div class="col-8">
-                        Read the full report to simplify your IT operations with next-generation systems management capabilities. 
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container-fluid scene--fullwidth-footer-button scene--no-margin">
-            <div class="container">
-                <div class="row">
-                    <div class="col-5">
-                        <a href="#" class="button button__white"><span>Read the report</span></a>
+            <div class="cta__button">
+                <div class="container">
+                    <div class="row button__body">
+                        <div class="col-12 col-lg-7">
+                            <a href="https://www.oracle.com/webfolder/s/delivery_production/docs/FY16h1/doc31/567701-fsn-wp.pdf" target="_blank" class="button">
+                                Download eBook
+                                <span><?php include('./images/svg/ctaArrow.php'); ?></span>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
+            <?php include('./images/svg/cta.php'); ?>
+
         </div>
+        <!-- call to action end -->
+
+
+
+
 
         <!-- closing comments start -->   
 

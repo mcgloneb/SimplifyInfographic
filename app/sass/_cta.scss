@@ -1,0 +1,118 @@
+.cta {
+    position: relative;
+    margin-top: 65vw;
+
+    @include screenSm {
+        margin-top: 50vw;
+    }
+
+    @include screenLg {
+        margin-top: 15vw;
+    }
+
+    @include screenXlg {
+        margin-top: 13vw;
+    }
+    @include screenXXlg {
+        margin-top: 12vw;
+    }
+
+    .cta__summary {
+        color: $white;
+        @include fontSize('sm');
+        
+        @include screenLg {
+            background-color: $oracleRed;          
+            padding: 30px 0;
+        }
+                    
+        .summary__body {
+
+            background-color: $oracleRed;
+            padding-top: 45px;
+            padding-bottom: 30px;
+            @include padding('left');
+            @include padding('right');
+            
+            @include screenSm {
+                padding-top: 60px;
+            }
+            @include screenMd {
+                padding-top: 75px;
+            }
+            @include screenLg {
+                padding: 0;
+                @include padding('left');
+            }             
+        }
+
+    }
+
+    .cta__button {
+        
+        @include screenLg {
+            background-color: $darkGrey;
+            padding: 30px 0;
+        }
+
+        .button__body {
+            background-color: $darkGrey;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            @include padding('left');
+            @include padding('right');
+            @include screenLg {
+                padding: 0;
+                @include padding('left');
+            }
+        }
+    }
+
+    svg#ctaSVG {
+        position: absolute;
+
+        left: 50%;
+        top: 0;
+        width: 50vw;
+        transform: translate(-5%, -89%);
+
+        @include screenSm {
+            width: 40vw;
+            transform: translate(-11%, -89%);
+        }
+
+        @include screenLg {
+            bottom: 0;
+            top: initial;
+            left: 50%;
+            transform: translate(44%, 11%);
+            width: 28vw;
+        }
+
+
+        @include screenXlg {            
+            transform: translate(52%, 11%);
+            width: 23vw;
+        }
+       
+       @include screenXXlg {  
+            transform: translate(50%, 11%);       
+            width: 20vw;
+        }
+
+        #coverDark, #bitDark {
+            fill : $darkGrey !important;
+            @include screenLg {
+                fill : #BA0000 !important;
+            }
+        }
+
+        #coverLight, #bitLight {
+            fill : lighten($darkGrey, 10%) !important;
+            @include screenLg {
+                fill : #F80000 !important;
+            }
+        }
+
+    }
+}

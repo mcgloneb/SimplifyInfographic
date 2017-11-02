@@ -18,6 +18,12 @@
         @content;
     }
 }
+@mixin screenXXlg {
+    @media screen and (min-width: $bpXXLarge) {
+        @content;
+    }
+}
+
 
 /**
  * Display consitent padding
@@ -29,6 +35,10 @@
         padding: $paddingSmallV $paddingSmallH;
     } @else if $type == header {
         padding: ($paddingSmallV/2) $paddingSmallH;
+    } @else if ($type == top or bottom) {
+        padding-#{$type}: $paddingSmallV; 
+    } @else if ($type == left or right) {
+        padding-#{$type}: $paddingSmallH;
     }
 
     @include screenSm {    
@@ -36,6 +46,10 @@
             padding: $paddingMedV $paddingMedH;
         } @else if $type == header {
             padding: ($paddingMedV/2) $paddingMedH;
+        } @else if ($type == top or bottom) {
+            padding-#{$type}: $paddingMedV; 
+        } @else if ($type == left or right) {
+            padding-#{$type}: $paddingMedH;
         }
 
     }
@@ -45,6 +59,10 @@
             padding: $paddingLargeV $paddingLargeH;
         } @else if $type == header {
             padding: ($paddingLargeV/2) $paddingLargeH;
+        } @else if ($type == top or bottom) {
+            padding-#{$type}: $paddingLargeV; 
+        } @else if ($type == left or right) {
+            padding-#{$type}: $paddingLargeH;
         }
     }
 
