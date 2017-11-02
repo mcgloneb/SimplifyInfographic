@@ -157,12 +157,13 @@
 
                     <p class="text-center">Oracle CEO Mark Hurd predicts that, by 2025:</p>
 
+
                     <div class="row text-center scene__graphic"> 
-                        <div class="col-md-4 col-sm-12" ><?php include('./images/svg/big_data.php'); ?><p><span>80%</span><br />of production applications will run in the cloud</p></div>
+                        <div class="col-md-4 col-sm-12"><?php include('./images/svg/big_data.php'); ?><p><span>80%</span><br />of production applications will run in the cloud</p></div>
                         <div class="col-md-4 col-sm-12"><img src="./images/temp_scene3_icon2.png" /><p><span>80%</span><br />of IT budgets will be spent on business innovation, and only</p></div>
                         <div class="col-md-4 col-sm-12" id="laptopspanner"><?php include('./images/svg/laptop_with_spanner.php'); ?><p><span>20%</span><br />will go towards system maintenance</p></div>    
                     </div>
-
+        
 
                     <div class="col-12 scene__body scene__enterprise" style="background-image:url(./images/temp_scene3_clouds.png);">
                         <div class="row">

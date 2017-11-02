@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 288 288" style="enable-background:new 0 0 288 288;" xml:space="preserve">
+     viewBox="0 0 288 288" style="enable-background:new 0 0 288 288" xml:space="preserve">
+
 <path id="sq_large_dark" style="fill:#324B5C;" d="M102.5,192h14c1.9,0,3.5,1.6,3.5,3.5v14c0,1.9-1.6,3.5-3.5,3.5h-14
 	c-1.9,0-3.5-1.6-3.5-3.5v-14C99,193.6,100.6,192,102.5,192z"/>
 <path id="sq_little_dark" style="fill:#324B5C;" d="M143.5,48h10c1.4,0,2.5,1.1,2.5,2.5v10c0,1.4-1.1,2.5-2.5,2.5h-10

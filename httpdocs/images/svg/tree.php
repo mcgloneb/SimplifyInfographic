@@ -1,7 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Icons_White" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
-	 y="0px" viewBox="0 0 186 192" style="enable-background:new 0 0 186 192;" xml:space="preserve">
+<svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     viewBox="0 0 186 192" style="enable-background:new 0 0 186 192" xml:space="preserve">
 
 <polygon style="display:none;fill:#FFFFFF;" points="174,162 174,132 154.5,132 154.5,111 166.5,111 166.5,81 154.5,81 154.5,51 
 	96,51 96,30 108,30 108,0 78,0 78,30 90,30 90,51 31.5,51 31.5,81 19.5,81 19.5,111 31.5,111 31.5,132 12,132 12,162 0,162 0,192 

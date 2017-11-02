@@ -1,9 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 192 192" style="enable-background:new 0 0 192 192;" xml:space="preserve">
+     viewBox="0 0 192 192" style="enable-background:new 0 0 192 192" xml:space="preserve">
 <defs>
-	
 	<clippath  id="clipmask">
 		<rect  class="st1" height="72" id="clipp" width="126" x="40.5" y="46.5"></rect>
 	</clippath>
