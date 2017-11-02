@@ -183,11 +183,36 @@ const setUpAnimations = () => {
     // create our scroll magic instance
     const scroll = new ScrollMagic.Controller();
 
+
+    /**
+     * Summary Scene
+     */
+    
+    const summaryAnimation = new TimelineMax();
+    summaryAnimation.set('#txt1', { attr : { 'width' : 0 } })
+    .set('#txt2', { attr : { 'width' : 0 } })
+    .set('#txt3', { attr : { 'width' : 0 } })
+    .to('#txt1', 0.25, { attr : { 'width' : 69 }, ease: Power2.easeInOut }, 0)
+    .to('#txt2', 0.25, { attr : { 'width' : 69 }, ease: Power2.easeInOut }, 0.15)
+    .to('#txt3', 0.25, { attr : { 'width' : 48 }, ease: Power2.easeInOut }, 0.3);
+
+    // animate the quote marks (not on a scene as will move constantly)
+    
+    const animateQuotes = new TimelineMax({repeat: -1});
+    animateQuotes.fromTo('#clippedQuotes', 2, { x : 0 }, { x : '-36%', ease: Linear.easeNone }, 0);
+
+    const sceneSummary = new ScrollMagic.Scene({
+        triggerElement: '#summary_trigger',
+        offset: defaults.offset()
+    }).setTween(summaryAnimation);
+
+
     // add our scenes
     scroll.addScene([
         sceneOne,
         sceneThree,
-        sceneFour
+        sceneFour,
+        sceneSummary
     ]);
 
 }

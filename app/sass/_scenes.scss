@@ -31,6 +31,10 @@
             background-color: $headerBackgroundeaderColour ;
             color: $headerFontColour;
         }
+        &--tertiary {
+            background-color: $headerBackgroundeaderColour ;
+            color: $headerFontColour;
+        }
 
        .scene__counter {
             
@@ -165,33 +169,6 @@
         color: $brown;
         @extend .scene__header--align-center;
 
-        // position: relative;
-
-        // &:before, &:after {
-        //     content: '';
-        //     display: block;
-        //     width: 50%;
-        //     height: 100%;
-        //     position: absolute;
-        //     background-color: $red;
-        //     top: 0;
-        // }
-
-        // &:before {
-        //     left: 1px;
-        //     transform: translateX(-100%);
-        // }
-
-        // &:after {
-        //     right: 0;
-        //     transform: translateX(100%);
-        // }
-
-        // &:before, &:after {
-        //     @include screenMd {
-        //         display: none;            
-        //     }
-        // }
         &--footer {
             background-color: $maroon;
         }
@@ -757,6 +734,28 @@
             }
         }
     }
+
+
+    &.scene__summary {
+
+        .scene__graphic {
+            @include flexCenter;
+
+            svg {
+                width: 80%;
+                margin: 0 auto;
+                display: block;
+                .fill {
+                    fill : $headerBackgroundeaderColour;
+                }
+            }
+        }
+
+        .scene__copy {
+            @include flexCenter;
+        }
+    }
+
 
     &.scene__tagline {
         @include fontSize('md'); 
