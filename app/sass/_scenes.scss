@@ -75,6 +75,9 @@
     &--no-margin {
         margin-top: 0;
     }
+    &--padding {
+        padding-top: 40px;
+    }
     &--small-margin {
         margin-top: 25px;
     }
@@ -197,7 +200,7 @@
 
     &.scene__one {
         background-color: $white;
-        padding: 40px 0 0 0;
+
         @include fontSize('md');
         .scene__graphic {
             
@@ -342,7 +345,7 @@
                 padding: 2% 0;
             }
 
-              svg {               
+              svg, img {               
                 
                 width: 80%;
                 display: block;
@@ -353,27 +356,9 @@
                 }
                 @include screenLg {
                     width: 90%;
-                    margin-top: 4%;
                 }
              
-            }   
-
-             img {               
-                
-                width: 80%;
-                max-width: 478px;
-                display: block;
-                margin: 0 auto;
-
-                @include screenSm {
-                    width: 70%;
-                }
-                @include screenLg {
-                    width: 90%;
-                    margin-top: 4%;
-                }
-             
-            }  
+            }    
 
         }
 
@@ -405,7 +390,7 @@
                 padding: 2% 0;
             }
 
-            svg {
+            svg, img {
 
                 width: 100%;
                 display: block;
@@ -417,7 +402,16 @@
                 @include screenLg {
                     width: 100%;
                 }
+   
+            }
 
+            #laptopspanner {
+                svg {
+                   // @include screenLg {
+                        margin-top: 20%;
+                        margin-bottom: -20%;
+                  //  }
+                }
             }
         }    
 
@@ -476,7 +470,7 @@
             overflow: hidden;  
             padding-bottom: 5%;
 
-            svg {
+            svg, img {
                 width: 100%;
                 display: block;
                 margin: 0 auto;
@@ -487,6 +481,10 @@
                 @include screenLg {
                     width: 100%;
                 }
+
+                &.arrow_icon {
+                    max-width: 52px;
+                }
             }
 
             @include screenLg {
@@ -495,50 +493,6 @@
         }
 
 
-
-
-
-
-        .bar__container {
-            width: 18rem;
-            display: block;
-            margin: 0 auto;
-            position: relative;
-            height: 100%;
-            min-height: 250px;
-        }
-
-        .bar {
-            
-            display: inline-block;
-            width: 3rem;
-            position: absolute;
-            bottom: 0;
-            
-            &__one {
-                background-color: #942646;
-                height: 64%;
-                left: 0;
-            }
-            &__two {
-                background-color: #f39220;
-                height: 71%;
-                left: 5rem;
-            }
-            &__three {
-                background-color: #ed1c24;
-                height: 91%;
-                left: 10rem;
-            }
-            &__four {
-                background-color: #8aadbf;
-                height: 91%;
-                left: 15rem;
-            }
-
-        }
-        
-
         p  {
             color: $blue;
             span {
@@ -546,6 +500,10 @@
                 line-height: 100%;
                 font-weight: bold;
                 font-style: italic;
+            }
+
+            &.no-margin {
+                margin-top: 10px;
             }
         }
 
@@ -865,10 +823,17 @@
 
     // some generic styling for elements within scenes
 
+
+
     ul>li {
          @include fontSize('lg');
     }
 
+}
+
+.outer-container {
+    width: 100%;
+    background-color: $white;
 }
 
 /**
@@ -894,6 +859,11 @@
             }
 
         }
+    }
+
+    .outer-container {
+        max-width: 540px;
+        margin: 0 auto;
     }
 }
 @media(min-width:768px){}
