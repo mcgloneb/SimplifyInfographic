@@ -112,14 +112,14 @@
 @mixin fontSize($size) {
     @if $size == sm {
 
-        font-size: 2.5vmin;
+        font-size: 4vmin;
 
         @include screenSm {
-            font-size: 1.5vmin;
+            font-size: 2.5vmin;
         }
         
         @include screenMd {
-            font-size: 1rem;
+            font-size: 1.2rem;
         }
 
 
@@ -141,16 +141,16 @@
 
     } @else if $size == lg {
 
-        font-size: 4.5vmin;
+        font-size: 7.5vmin;
 
         @include screenSm {
-            font-size: 3vmin;
+            font-size: 6vmin;
         }
         @include screenMd {
-            font-size: 1.5rem;
+            font-size: 2.5rem;
         }
         @include screenXlg {
-            font-size: 1.8rem;
+            font-size: 2.5rem;
         }
 
     } @else if $size == xl {
