@@ -35,9 +35,10 @@ a {
         background-position: center;   
         height: 42px;
         width: 115px;         
-        
-    
-        @include screenMd {          
+        margin-left: 25px;       
+
+        @include screenMd {   
+            margin-left: 0;       
             height: 70px;
             width: 191px;         
         }
