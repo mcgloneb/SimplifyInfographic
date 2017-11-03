@@ -75,6 +75,9 @@
         border-style:solid;
         border-color: $grey;
         border-width: 1px 0 0 0;
+        hr {
+            display: none;
+        }
     }
     &--no-margin {
         margin-top: 0;
@@ -503,9 +506,14 @@
             img, svg { 
                 max-width: 190px;
             }
-
+            .down-arrow-container {
+                padding: 0; 
+                margin: 0; 
+                width: 100%; 
+                text-align: center; 
+                line-height: 0;
+            }
         }
-
         .flex-container {
             display: flex;
             align-items: center;
@@ -860,15 +868,29 @@
         }
         &--bordered {
             border: none;
+            hr {
+                display: block;
+                width: 80%;
+                margin: 30px auto 0 auto;
+            }
         }
 
         &.scene__one {
-
             .chart-text {
                 margin-top: 0px;
                 padding: 20px 0;
             }
+        }
 
+        &.scene__three {
+            .scene__enterprise {
+                p {
+                    padding-top: 20%;
+                }
+            }
+            .scene__enterprise {
+                background-position: right top;
+            }
         }
     }
 

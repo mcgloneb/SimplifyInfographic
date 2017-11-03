@@ -52,7 +52,7 @@
             </div> 
 
             <div class="row scene scene__one scene--no-margin scene--padding">
-                <div class="col-md-4 offset-md-1 col-sm-12 text-center" id="s1_trigger">
+                <div class="col-lg-4 offset-lg-1 col-sm-12 text-center" id="s1_trigger">
                         <figure class="static-chart">
                             <svg width="200" height="200">:
                               <circle class="outer" cx="95" cy="95" r="85"/>
@@ -73,10 +73,10 @@
                           </figure>
                         <p>of production applications have bugs or errors<sup>1</sup></p>
                         </div>
-                        <div class="col-md-2 col-sm-12 text-center chart-text">
+                        <div class="col-lg-2 col-sm-12 text-center chart-text">
                             <p>yet</p>
                         </div>
-                        <div class="col-md-4 col-sm-12 text-center">
+                        <div class="col-lg-4 col-sm-12 text-center">
                             <figure class="static-chart">
                                 <svg width="200" height="200">:
                                     <circle class="outer" cx="95" cy="95" r="85" />
@@ -103,17 +103,18 @@
 
                 <div class="col-12">
                     <div class="row" id="s1b_trigger">
-                        <div class="col-md-7 offset-md-1 col-sm-12 scene--bordered">
+                        <div class="col-lg-7 offset-lg-1 col-sm-12 scene--bordered">
+                            <hr />
                             <div class="row scene">
-                                <div class="col-md-8 offset-md-2 col-sm-10 offset-sm-1">
+                                <div class="col-lg-8 offset-lg-2 col-sm-10 offset-sm-1">
                                     <p><strong>Why?</strong> Existing monitoring solutions are slow and create too much data</p>
                                 </div>
-                                <div class="col-md-10 offset-md-2 col-sm-10 offset-sm-1">
+                                <div class="col-lg-10 offset-lg-2 col-sm-10 offset-sm-1">
                                     <p><strong>The result:</strong> <span>Only 6%</span> of companies completely trust their monitoring strategy<sup>1</sup></p>
                                 </div>
                             </div>                         
                         </div>
-                        <div class="col-md-3 col-sm-12 text-center scene__graphic scene--bordered flex-container">
+                        <div class="col-lg-3 col-sm-12 text-center scene__graphic scene--bordered flex-container">
                             <?php include('./images/svg/dial.php'); ?>     
                         </div>
                     </div>
@@ -130,13 +131,12 @@
                 
                 <div class="col-12 scene__body">
                     <div class="row">
-                        <div class="col-md-5 cols-xs-12 scene__graphic flex-container" id="s2_trigger">
+                        <div class="col-lg-5 cols-xs-12 scene__graphic flex-container" id="s2_trigger">
                             <?php include('./images/svg/graph.php'); ?>     
                         </div>
-                        <div class="col-md-5  cols-xs-12  offset-md-2">
+                        <div class="col-lg-5  cols-xs-12  offset-lg-2">
                             <p>On average, organisations have:<br /><span>6-10</span><br />IT operations systems of record, typically working in functional silos<sup>2</sup>.</p>
-                            <p>This is clearly too many, so:</p>
-                            <p><span>55%</span><br />of IT organisations already recognise a need for new monitoring solutions that take a more holistic view<sup>3</sup></p>
+                            <p>This is clearly too many, so:<br /><span>55%</span><br />of IT organisations already recognise a need for new monitoring solutions that take a more holistic view<sup>3</sup></p>
                         </div>
                     </div>
                 </div>
@@ -208,32 +208,37 @@
                 
                 <div class="col-12 scene__body">
                     <div class="row">
-                        <div class="col-md-4 cols-xs-12 scene__graphic flex-container text-center" id="s4_trigger">
+                        <div class="col-lg-4 cols-xs-12 scene__graphic flex-container text-center">
                             <img src="./images/temp_scene4_magnifyingglass.png" />
                         </div>
-                        <div class="col-md-7 offset-md-1 col-sm-12 ">
+                        <div class="col-lg-7 offset-lg-1 col-sm-12 ">
                             <p><span>75%</span><br />of heavy users of multiple cloud solutions have already implemented service-level monitoring and reporting across their full mix of public, private and hybrid cloud resources<sup>3</sup>.</p>
                             <p>Oracle Management Cloud (OMC) intelligently identifies performance issues across all your cloud resources using four types of machine learning algorithm:</p>
                         </div>
                     </div>
 
                     <div class="row scene__callout">
-                        <div class="col-md-7 offset-md-1 col-sm-12">
-                            <ul>
-                                <li>Correlating data sets that are too large for humans to evaluate</li>
-                                <li>Clustering data sets to automatically identify problems</li>
-                                <li>Detecting and troubleshooting anomalies</li>
-                                <li>Predicting future behaviour to enable intelligent decisions</li>
-                            </ul>
+                        <div class="col-xs-12 down-arrow-container">
+                            <img src="./images/down-arrow.png" />
                         </div>
-                        <div class="col-md-4 col-sm-12 flex-container scene__graphic">
-                            <?php include('./images/svg/tree.php'); ?>
+                        <div class="row">
+                            <div class="col-lg-7 offset-lg-1 col-sm-12">
+                                <ul>
+                                    <li>Correlating data sets that are too large for humans to evaluate</li>
+                                    <li>Clustering data sets to automatically identify problems</li>
+                                    <li>Detecting and troubleshooting anomalies</li>
+                                    <li>Predicting future behaviour to enable intelligent decisions</li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 col-sm-12 flex-container scene__graphic" id="s4_trigger">
+                                <?php include('./images/svg/tree.php'); ?>
+                            </div>
                         </div>
                     </div>
 
                     <div class="row scene__body">
-                        <div class="col-md-2 offset-md-1 col-sm-2 scene__graphic flex-container"><img src="./images/temp_scene4_arrow.png" class="arrow_icon" /></div>
-                        <div class="col-md-8 col-sm-9"><p class="no-margin">Machine learning is essential for effective application performance monitoring.</p></div>
+                        <div class="col-lg-2 offset-lg-1 col-sm-2 scene__graphic flex-container"><img src="./images/temp_scene4_arrow.png" class="arrow_icon" /></div>
+                        <div class="col-lg-8 col-sm-9"><p class="no-margin">Machine learning is essential for effective application performance monitoring.</p></div>
                     </div>
 
                 </div>
@@ -248,12 +253,12 @@
 
                     <div class="row">
                         
-                        <div class="col-12 col-md-6 scene__graphic" id="summary_trigger">
+                        <div class="col-12 col-lg-6 scene__graphic" id="summary_trigger">
                             <div class="flex-container">
                                 <?php include('./images/svg/summaryIcon2.php'); ?>
                             </div>
                         </div>
-                        <div class="col-12 col-md-6 scene__copy">
+                        <div class="col-12 col-lg-6 scene__copy">
                             <div class="flex-container">
                                 <p>Machine learning can simplify your hybrid cloud infrastructure, giving you the freedom to achieve more.</p>                                
                                 <p>It can reach into your huge volumes of complex data and pull out the simple truths on application performance – enabling you to improve employee productivity and optimise the customer experience.</p>
@@ -300,10 +305,6 @@
         </div>
         <!-- call to action end -->
 
-
-
-
-
         <!-- closing comments start -->   
 
         <div class="container" id="intro_trigger">
@@ -311,10 +312,9 @@
                 <div class="col-12">
                     <strong>Additional sources</strong>
                     <ol>
-                        <li>Business 2 Community</li>
-                        <li>Bersin by Deloitte, The Cost of Voluntary Turnover, September 2016</li>
-                        <li>The Power of Thanks by Eric Mosley, March 2015</li>
-                        <li>The McKinsey Global Institute</li>
+                        <li>Put the 'Ops' in 'DevOps': Improve Speed and Agility through Better Service Delivery, by Forrester, August 2016</li>
+                        <li>Deploy a Multivendor Strategy for Availability and Performance Monitoring, by Gartner, January 2014</li>
+                        <li>Integrated Cloud-Based Monitoring and Analytics Break Down IT Operations Silos, by IDC, June 2016</li>
                     </ol>
                 </div>
             </div>
