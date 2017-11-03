@@ -11,6 +11,7 @@ const h = require('./helpers');
 
 // holders for our scenes
 let sceneOne, 
+    sceneOneB,
     sceneThree,
     sceneFour;
 
@@ -82,12 +83,11 @@ const setUpAnimations = () => {
      * Define the animations
      */
     
-    
+
     /**
      * Scene One
      * Chart Animation
      */
-
     var counter = { var: 0 };
     var counter2 = { var: 0 };
     var tal32 = document.getElementById("percentage32");
@@ -105,13 +105,29 @@ const setUpAnimations = () => {
         offset: defaults.offset()
     }).setTween(animateChart);
 
+
+    /**
+     * Scene One B
+     * Dial Animation
+     */
+    const dialSpinner = new TimelineMax();
+    dialSpinner
+        .to('#dialPointer', 0.5, { rotation : 10, transformOrigin: '28% 54%' })
+        .to('#dialPointer', 2, { rotation : -160, transformOrigin: '28% 54%', ease: Back.easeOut.config(1.9) });
+      //  .to('#dialPointer', 2, { rotation : 23, ease: Back.easeOut.config(1.9) });
+
+    sceneOneB = new ScrollMagic.Scene({
+        triggerElement: '#s1b_trigger',
+        offset: defaults.offset()
+    }).setTween(dialSpinner);
+
     /**
      * Scene 3
      * Mutiple touch points
      */
      const animateTouchPoints = new TimelineMax();
      animateTouchPoints
-        .fromTo('#globe', 0.25, {scaleX:0, scaleY:0, opacity:0, transformOrigin: "center center"},  {scaleX:1, scaleY:1, opacity:1,transformOrigin: "center center"})
+        .fromTo('#sq_little_dark', 0.25, {scaleX:0, scaleY:0, opacity:0, transformOrigin: "center center"},  {scaleX:1, scaleY:1, opacity:1,transformOrigin: "center center"})
         .fromTo('#sq_large_dark', 0.2, {scaleX:0, scaleY:0, opacity:0, transformOrigin: "center center"},  {scaleX:1, scaleY:1, opacity:1,transformOrigin: "center center"})
         .fromTo('#sq_little_yello', 0.2, {scaleX:0, scaleY:0, opacity:0, transformOrigin: "center center"},  {scaleX:1, scaleY:1, opacity:1,transformOrigin: "center center"})
         .fromTo('#sq_red', 0.2, {scaleX:0, scaleY:0, opacity:0, transformOrigin: "center center"},  {scaleX:1, scaleY:1, opacity:1,transformOrigin: "center center"})
@@ -133,7 +149,6 @@ const setUpAnimations = () => {
      * Scene Four
      * Animate the graph heights
      */
-    
     const AnimateTree = new TimelineMax();
     AnimateTree
     /*
@@ -154,7 +169,6 @@ const setUpAnimations = () => {
     .fromTo('#box3_x5F_2, #box3_x5F_4', 0.3, {scaleX:0, scaleY:0, opacity:0, transformOrigin: "center center"},  {scaleX:1, scaleY:1, opacity:1,transformOrigin: "center center"})
     .fromTo('#box3_x5F_3', 0.3, {scaleX:0, scaleY:0, opacity:0, transformOrigin: "center center"},  {scaleX:1, scaleY:1, opacity:1,transformOrigin: "center center"});
 
-
     sceneFour = new ScrollMagic.Scene({
         triggerElement: '#s4_trigger',
         offset: defaults.offset()
@@ -165,29 +179,25 @@ const setUpAnimations = () => {
      * Scrolling graph....
      * this can run constantly, no need for scroll monitoring....
      */
-
     const animateGraph = new TimelineMax({repeat:-1, repeatDelay:0});
     animateGraph
         .fromTo('#graphContainer', 8, { x: '0%' }, { x: '-100%', ease: Linear.easeNone })
-        .fromTo('#graphContainer2', 8, { x: '100%' }, { x: '0%', ease: Linear.easeNone }, "-=8");
-
+        .fromTo('#graphContainer2', 8, { x: '100%' }, { x: '0%', ease: Linear.easeNone }, "-=8");    
     /**
         *Laptop and spanner
         * Can run constantly, as above
     */
-
-    const animateLaptopAndSpanner = new TimelineMax({repeat:-1, repeatDelay:0, yoyo:true});
+    const animateLaptopAndSpanner = new TimelineMax({repeat:-1, repeatDelay:0});
     animateLaptopAndSpanner
-        .fromTo('#nutAndTool', 2, { rotation: "0" },  { rotation: "+=20", transformOrigin:"19.3px 22.3px",  ease: Bounce.easeOut })
-        .fromTo('#nutAndTool', 2, { rotation: "20" },  { rotation: "-=30", transformOrigin:"19.3px 22.3px",  ease: Bounce.easeOut });
+        .set('#nutAndTool', { x: "-=6", y: "+=10" })
+        .fromTo('#nutAndTool', 2, { rotation: "-=20" },  { rotation: "+=40", transformOrigin:"19.3px 22.3px" })
+        .fromTo('#nutAndTool', 1, { rotation: "20" },  { rotation: "-20", transformOrigin:"19.3px 22.3px" });
     // create our scroll magic instance
     const scroll = new ScrollMagic.Controller();
 
-
     /**
      * Summary Scene
-     */
-    
+     */ 
     const summaryAnimation = new TimelineMax();
     summaryAnimation.set('#txt1', { attr : { 'width' : 0 } })
     .set('#txt2', { attr : { 'width' : 0 } })
@@ -210,6 +220,7 @@ const setUpAnimations = () => {
     // add our scenes
     scroll.addScene([
         sceneOne,
+        sceneOneB,
         sceneThree,
         sceneFour,
         sceneSummary

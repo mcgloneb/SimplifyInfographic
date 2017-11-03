@@ -333,9 +333,10 @@
                 }
                 @include screenLg {
                     width: 90%;
+
                 }
-             
-            }    
+            }  
+
 
         }
 
@@ -348,7 +349,7 @@
             color: $blue;
             span {
                 color: $blue;
-                font-size: 6em;
+                font-size: 2em;
                 line-height: 100%;
                 font-weight: bold;
                 font-style: italic;
@@ -381,7 +382,9 @@
                 }
    
             }
-
+            .microscope svg {
+                margin-top: 20px;
+            }  
             #laptopspanner {
                 svg {
                    // @include screenLg {
