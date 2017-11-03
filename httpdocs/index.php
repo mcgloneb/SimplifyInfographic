@@ -156,9 +156,24 @@
 
 
                     <div class="row text-center scene__graphic"> 
-                        <div class="col-md-4 col-sm-12"><?php include('./images/svg/big_data.php'); ?><p><span>80%</span><br />of production applications will run in the cloud</p></div>
-                        <div class="col-md-4 col-sm-12 microscope"><?php include('./images/svg/microscope.php'); ?><p><span>80%</span><br />of IT budgets will be spent on business innovation, and only</p></div>
-                        <div class="col-md-4 col-sm-12"><?php include('./images/svg/laptop_with_spanner.php'); ?><p><span>20%</span><br />will go towards system maintenance</p></div>    
+                        <div class="col-lg-4 col-sm-12">
+                            <div class="s3__match">
+                                <?php include('./images/svg/big_data.php'); ?>
+                            </div>
+                            <p><span>80%</span><br />of production applications will run in the cloud</p>
+                            </div>
+                        <div class="col-lg-4 col-sm-12 microscope">
+                            <div class="s3__match">
+                                <?php include('./images/svg/microscope.php'); ?>
+                            </div>
+                            <p><span>80%</span><br />of IT budgets will be spent on business innovation, and only</p>
+                        </div>
+                        <div class="col-lg-4 col-sm-12">
+                            <div class="s3__match">
+                                <?php include('./images/svg/laptop_with_spanner.php'); ?>
+                            </div>
+                            <p><span>20%</span><br />will go towards system maintenance</p>
+                        </div>    
                     </div>
         
 
