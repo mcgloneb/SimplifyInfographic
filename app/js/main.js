@@ -9,6 +9,10 @@ import { $, $$ } from './lib/bling';
 // load our helper functions
 const h = require('./helpers');
 
+// breakpoints
+const breakPointLg = 992;
+
+
 // holders for our scenes
 let sceneOne, 
     sceneOneB,
@@ -70,8 +74,10 @@ console.log(defaults.offsetLarge());
 const resizing = () => {
 
     if (detectIE()) {
-        setHeightOfContainers();
+        setHeightOfSVGContainers();
     }
+
+    setHeightOfContainers();
 
     // reset the animation offset values
     //console.log("resizing");
@@ -231,9 +237,11 @@ const setUpAnimations = () => {
 document.addEventListener("DOMContentLoaded", function(event) { 
     
     if (detectIE()) {
-        setHeightOfContainers();
+        setHeightOfSVGContainers();
     }
     
+    setHeightOfContainers();
+
     setUpAnimations();
 
     window.on('resize', resizing);
@@ -242,8 +250,42 @@ document.addEventListener("DOMContentLoaded", function(event) {
     
 });
 
-
 function setHeightOfContainers() {
+
+    // get viewport size
+    const viewportWidth = h.viewportWidth();
+
+    // set heights of SVG containers for Scene 3
+
+    let s3Items = document.querySelectorAll('.s3__match');
+    let s3Height = 0;
+    let s3Large = 0;
+    for(let i = 0; i < s3Items.length; i++) {
+        
+        if (viewportWidth < breakPointLg) {
+            s3Items[i].style.height = '';
+        } else {
+
+            if (s3Items[i].clientHeight > s3Height) {
+                s3Height = s3Items[i].clientHeight;
+            }
+        }
+
+    }
+
+    if (viewportWidth >= breakPointLg) {
+        for(let i = 0; i < s3Items.length; i++) {
+            s3Items[i].style.height = s3Height+'px';
+        }
+    }
+    
+
+
+
+}
+
+
+function setHeightOfSVGContainers() {
     
     const containerWidth = h.getElementWidth('intro_trigger');
 

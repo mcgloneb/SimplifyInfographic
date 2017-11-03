@@ -382,8 +382,13 @@
                 }
    
             }
-            .microscope svg {
-                margin-top: 20px;
+            .microscope .s3__match {
+                @include screenLg {
+                    padding-top: 30px;
+                    svg {
+                        width: 80%;
+                    }
+                }
             }  
             #laptopspanner {
                 svg {
