@@ -14,7 +14,7 @@
         margin-top: 13vw;
     }
     @include screenXXlg {
-        margin-top: 12vw;
+        margin-top: 205px;
     }
 
     .cta__summary {
@@ -75,6 +75,7 @@
         top: 0;
         width: 50vw;
         transform: translate(-5%, -89%);
+        max-width: 346px;
 
         @include screenSm {
             width: 40vw;
