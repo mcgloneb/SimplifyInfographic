@@ -491,6 +491,10 @@
             color:#FFF; 
             background-color:#0088a0;
 
+            ul li {
+                @include fontSize('md');
+            }
+
             img, svg { 
                 max-width: 190px;
             }
