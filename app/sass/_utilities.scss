@@ -4,3 +4,19 @@
 .text-center {
     text-align: center;
 }
+
+.padded-tb {
+    @include padding('top');
+    @include padding('bottom');
+}
+.padded-b {
+    @include padding('bottom');
+}
+
+.no-margin-b {
+    margin-bottom: 0 !important;
+}
+
+.floating-icon {
+    animation: floatIcon 1s linear 3s infinite alternate;
+}

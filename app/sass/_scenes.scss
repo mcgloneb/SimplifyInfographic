@@ -72,11 +72,23 @@
 
     }
     &--bordered {
-        border-style:solid;
-        border-color: $grey;
-        border-width: 1px 0 0 0;
+        
+        border: 0;
+
+        @include screenLg {
+            border-top: 1px solid $grey;
+
+        }
+
         hr {
-            display: none;
+            
+            display: block;
+            width: 80%;
+            margin: 30px auto 0;
+
+             @include screenLg {
+                display: none;
+            }
         }
     }
     &--no-margin {
@@ -111,6 +123,7 @@
     }
 
     &.scene__intrographic {
+        font-size: 0;
         img { 
             width: 100%; 
             max-width: 100%;
@@ -196,6 +209,7 @@
                 @include screenLg {
                     width: 90%;
                     margin: 0;
+                    margin-top: 50px;
                 }
              
             }   
@@ -327,7 +341,7 @@
 
               svg, img {               
                 
-                width: 80%;
+                width: 90%;
                 display: block;
                 margin: 0 auto;
 
@@ -385,12 +399,22 @@
                 }
    
             }
-            .microscope .s3__match {
+
+            .s3__match {
                 @include screenLg {
-                    padding-top: 30px;
-                    svg {
+                    min-height: 300px;
+                }
+            }
+
+            .microscope .s3__match {
+                svg {
+                    width: 70%;
+                    @include screenLg {
                         width: 80%;
                     }
+                }
+                @include screenLg {
+                    padding-top: 30px;
                 }
             }  
             #laptopspanner {
@@ -420,6 +444,16 @@
             background-size: contain;
             background-position: right center;
             background-repeat: no-repeat;
+            padding-top: 50px;
+            display: flex;
+            align-items: flex-end;
+            @include screenMd {
+                padding-top: 150px;
+            }
+            @include screenLg {
+                min-height: 250px;
+                padding-top: 0;
+            }
             p  {
                 color: $blue;
                 span {
@@ -457,6 +491,7 @@
             text-align: center;   
             overflow: hidden;  
             padding-bottom: 5%;
+            @include flexCenter;
 
             svg, img {
                 width: 100%;
@@ -498,6 +533,12 @@
         .scene__callout {
             color:#FFF; 
             background-color:#0088a0;
+            position: relative;
+            overflow: hidden;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            @include padding('left');
+            @include padding('right');
 
             ul li {
                 @include fontSize('md');
@@ -513,6 +554,18 @@
                 text-align: center; 
                 line-height: 0;
             }
+
+            &:before {
+                position: absolute;
+                left: 50%;
+                top: 0;
+                content: '';
+                width: 25px;
+                height: 25px;
+                display: block;
+                background-color: $white;
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
         }
         .flex-container {
             display: flex;
@@ -520,6 +573,18 @@
 
             img {
                 margin: 0 auto;
+            }
+        }
+
+        .additional-info {
+            div {
+                @include padding('top');
+            }
+        }
+
+        .ie-fix svg {
+            @include screenLg {
+                min-height: 450px;
             }
         }
 
@@ -768,7 +833,13 @@
                 .fill {
                     fill : $headerBackgroundeaderColour;
                 }
+                @include screenLg {
+                    min-height: 300px;
+                }
             }
+
+
+
         }
 
         .scene__copy {
@@ -866,14 +937,6 @@
         &--fullwidth {
             max-width: 540px;
         }
-        &--bordered {
-            border: none;
-            hr {
-                display: block;
-                width: 80%;
-                margin: 30px auto 0 auto;
-            }
-        }
 
         &.scene__one {
             .chart-text {
@@ -908,21 +971,28 @@
  */
 .de {
 
-    .scene__seven {
-        
-        .scene__copy--one-v2 {
-            max-width: 41.666667%;
-            @include screenMd {
-                max-width: 50%;
+    .scene {
+        .scene__introline {
+            @media screen and (max-width: 768px) {
+                font-size: 5vmin;
             }
         }
-        .scene__copy--two-v2 {
-            max-width: 58.33333%;
-            @include screenMd {
-                max-width: 50%;
+        .scene__header {
+            @media screen and (max-width: 768px) {
+                font-size: 4.5vmin;
             }
         }
 
+        &.scene__three {
+            .scene__enterprise {
+                span {
+                    @media screen and (max-width: 768px) {
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
     }
+
 
 }

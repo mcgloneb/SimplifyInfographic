@@ -53,6 +53,10 @@ const keyboardKeysAnimation = {
         return false;
     },
     start() {
+
+        if (detectIE()) {
+            return false;
+        }
         const num = this.randomKey();
         const i = this;
         if (num) {
@@ -118,8 +122,8 @@ const setUpAnimations = () => {
      */
     const dialSpinner = new TimelineMax();
     dialSpinner
-        .to('#dialPointer', 0.5, { rotation : 10, transformOrigin: '28% 54%' })
-        .to('#dialPointer', 2, { rotation : -160, transformOrigin: '28% 54%', ease: Back.easeOut.config(1.9) });
+        .set('#dialPointer', { rotation : -180, transformOrigin: '28% 54%' })
+        .to('#dialPointer', 2, { rotation : -160, transformOrigin: '28% 54%', ease: Back.easeOut.config(70) }, 1);
       //  .to('#dialPointer', 2, { rotation : 23, ease: Back.easeOut.config(1.9) });
 
     sceneOneB = new ScrollMagic.Scene({
@@ -134,22 +138,45 @@ const setUpAnimations = () => {
      const animateTouchPoints = new TimelineMax();
      animateTouchPoints
         .fromTo('#sq_little_dark', 0.25, {scaleX:0, scaleY:0, opacity:0, transformOrigin: "center center"},  {scaleX:1, scaleY:1, opacity:1,transformOrigin: "center center"})
+        .set('#sq_little_dark', {className:'floating-icon'})
         .fromTo('#sq_large_dark', 0.2, {scaleX:0, scaleY:0, opacity:0, transformOrigin: "center center"},  {scaleX:1, scaleY:1, opacity:1,transformOrigin: "center center"})
+        .set('#sq_large_dark', {className:'floating-icon'})
         .fromTo('#sq_little_yello', 0.2, {scaleX:0, scaleY:0, opacity:0, transformOrigin: "center center"},  {scaleX:1, scaleY:1, opacity:1,transformOrigin: "center center"})
+        .set('#sq_little_yello', {className:'floating-icon'})
         .fromTo('#sq_red', 0.2, {scaleX:0, scaleY:0, opacity:0, transformOrigin: "center center"},  {scaleX:1, scaleY:1, opacity:1,transformOrigin: "center center"})
+        .set('#sq_red', {className:'floating-icon'})
         .fromTo('#sq_burgundy', 0.2, {scaleX:0, scaleY:0, opacity:0, transformOrigin: "center center"},  {scaleX:1, scaleY:1, opacity:1,transformOrigin: "center center"})
+        .set('#sq_burgundy', {className:'floating-icon'})
         .fromTo('#pieChart', 0.2, {scaleX:0, scaleY:0, opacity:0, transformOrigin: "center center"},  {scaleX:1, scaleY:1, opacity:1,transformOrigin: "center center"})
+        .set('#pieChart', {className:'floating-icon'})
         .fromTo('#chart_1_', 0.2, {scaleX:0, scaleY:0, opacity:0, transformOrigin: "center center"},  {scaleX:1, scaleY:1, opacity:1,transformOrigin: "center center"})
+        .set('#chart_1_', {className:'floating-icon'})
         .fromTo('#A', 0.2, {scaleX:0, scaleY:0, opacity:0, transformOrigin: "center center"},  {scaleX:1, scaleY:1, opacity:1,transformOrigin: "center center"})
+        .set('#A', {className:'floating-icon'})
         .fromTo('#chart2', 0.2, {scaleX:0, scaleY:0, opacity:0, transformOrigin: "center center"},  {scaleX:1, scaleY:1, opacity:1,transformOrigin: "center center"})
+        .set('#chart2', {className:'floating-icon'})
         .fromTo('#sq_large_yello', 0.2, {scaleX:0, scaleY:0, opacity:0, transformOrigin: "center center"},  {scaleX:1, scaleY:1, opacity:1,transformOrigin: "center center"})
-        .fromTo('#tree', 0.2, {scaleX:0, scaleY:0, opacity:0, transformOrigin: "center center"},  {scaleX:1, scaleY:1, opacity:1,transformOrigin: "center center"});
+        .set('#sq_large_yello', {className:'floating-icon'})
+        .fromTo('#tree', 0.2, {scaleX:0, scaleY:0, opacity:0, transformOrigin: "center center"},  {scaleX:1, scaleY:1, opacity:1,transformOrigin: "center center"})
+        .set('#tree', {className:'floating-icon'});
 
     sceneThree = new ScrollMagic.Scene({
         triggerElement: '#s3_trigger',
         //offset: defaults.offset()
     }).setTween(animateTouchPoints);
 
+
+    /**
+     * Microscope
+     */
+    
+    const animateMicroscope = new TimelineMax( { repeat: -1, repeatDelay: 1});
+    animateMicroscope.to('#plateMount', 0.5, { y : -6 })
+    .to('#plateMount', 0.5, { y : -2 }, 1)
+    .to('#plateMount', 1, { y : -8 }, 2)
+    .to('#plateMount', 1, { y : 0 }, 6);
+
+    // come on....
 
     /**
      * Scene Four
@@ -187,18 +214,61 @@ const setUpAnimations = () => {
      */
     const animateGraph = new TimelineMax({repeat:-1, repeatDelay:0});
     animateGraph
-        .fromTo('#graphContainer', 8, { x: '0%' }, { x: '-100%', ease: Linear.easeNone })
-        .fromTo('#graphContainer2', 8, { x: '100%' }, { x: '0%', ease: Linear.easeNone }, "-=8");    
+        .fromTo('#graphElements', 8, { x: '0%' }, { x: '-50%', ease: Linear.easeNone });    
+    
+
+
     /**
         *Laptop and spanner
         * Can run constantly, as above
     */
     const animateLaptopAndSpanner = new TimelineMax({repeat:-1, repeatDelay:0});
     animateLaptopAndSpanner
-        .set('#nutAndTool', { x: "-=6", y: "+=10" })
-        .fromTo('#nutAndTool', 2, { rotation: "-=20" },  { rotation: "+=40", transformOrigin:"19.3px 22.3px" })
-        .fromTo('#nutAndTool', 1, { rotation: "20" },  { rotation: "-20", transformOrigin:"19.3px 22.3px" });
+        .to('#nutAndTool', 0.5, { rotation : "-=20", transformOrigin:"19.3px 22.3px" }, 0)
+        .to('#nutAndTool', 1.5, { rotation : "+=30", transformOrigin:"19.3px 22.3px", ease: Power2.easeOut }, 1);
+    // animateLaptopAndSpanner
+    //     .set('#nutAndTool', { x: "-=6", y: "+=10" })
+    //     .fromTo('#nutAndTool', 2, { rotation: "-=20" },  { rotation: "+=30", transformOrigin:"19.3px 22.3px" })
+    //     .fromTo('#nutAndTool', 1, { rotation: "20" },  { rotation: "-20", transformOrigin:"19.3px 22.3px" });
     // create our scroll magic instance
+    
+
+
+    /**
+     * Maginifying Glass & Chart
+     */
+    const animateChartMagnifyingGlass = new TimelineMax();
+    animateChartMagnifyingGlass
+        .set('#IconMagnifyingGlass_line1', { attr : { width : 0 } })
+        .set('#IconMagnifyingGlass_line2', { attr : { width : 0 } })
+        .set('#IconMagnifyingGlass_bar1', { attr : { y : 111, height : 0 } })
+        .set('#IconMagnifyingGlass_bar2', { attr : { y : 111, height : 0 } })
+        .set('#IconMagnifyingGlass_bar3', { attr : { y : 111, height : 0 } })
+        .set('#IconMagnifyingGlass_bar4', { attr : { y : 111, height : 0 } })
+        .set('#IconMagnifyingGlass_bar3Large', { attr : { y : 80.8, height : 0 } })
+        .set('#IconMagnifyingGlass_bar4Large', { attr : { y : 90.9, height : 0 } })        
+        .to('#IconMagnifyingGlass_line1', 0.3, { attr : { width : 69 } }, 0)
+        .to('#IconMagnifyingGlass_line2', 0.3, { attr : { width : 69 } }, 0.15)        
+        .to('#IconMagnifyingGlass_bar1', 0.2, { attr : { y : 84, height : 27 } }, 0.2)
+        .to('#IconMagnifyingGlass_bar2', 0.3, { attr : { y : 63, height : 48 } }, 0.4)
+        .to('#IconMagnifyingGlass_bar3', 0.3, { attr : { y : 47, height : 64 } }, 0.6)
+        .to('#IconMagnifyingGlass_bar3Large', 0.25, { attr : { y : 30.1, height : 50.7 } }, 0.75)
+        .to('#IconMagnifyingGlass_bar4', 0.25, { attr : { y : 54, height : 57 } }, 1.1)
+        .to('#IconMagnifyingGlass_bar4Large', 0.25, { attr : { y : 48.6, height : 32.3 } }, 1.215);
+
+
+    const sceneFourA = new ScrollMagic.Scene({
+        triggerElement: '#s4_trigger_1',
+        offset: defaults.offset()
+    }).setTween(animateChartMagnifyingGlass);
+
+
+
+
+
+
+
+
     const scroll = new ScrollMagic.Controller();
 
     /**
@@ -228,6 +298,7 @@ const setUpAnimations = () => {
         sceneOne,
         sceneOneB,
         sceneThree,
+        sceneFourA,
         sceneFour,
         sceneSummary
     ]);
@@ -261,11 +332,11 @@ function setHeightOfContainers() {
     let s3Height = 0;
     let s3Large = 0;
     for(let i = 0; i < s3Items.length; i++) {
+
         
         if (viewportWidth < breakPointLg) {
             s3Items[i].style.height = '';
         } else {
-
             if (s3Items[i].clientHeight > s3Height) {
                 s3Height = s3Items[i].clientHeight;
             }
@@ -287,15 +358,7 @@ function setHeightOfContainers() {
 
 function setHeightOfSVGContainers() {
     
-    const containerWidth = h.getElementWidth('intro_trigger');
 
-    // intro image is 0.5486 height of container width
-    const introImageHeight = containerWidth * 0.5486;
-    document.getElementById('intro_graphic_container').style.height = introImageHeight +'px';
-
-    // chatbots image is 0.4968 height of container width
-    const chatbotImageHeight = containerWidth * 0.4968;
-    document.getElementById('s7_trigger').style.height = chatbotImageHeight +'px';
 
 }
 

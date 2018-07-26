@@ -33,3 +33,12 @@
         stroke-dashoffset: 365;
     }
 }
+
+@keyframes floatIcon {
+    0% {
+        transform: translateY(0.5%);
+    }
+    100% {
+        transform: translateY(-0.5%);
+    }
+}

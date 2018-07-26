@@ -19,6 +19,7 @@ const javascript = {
   }],
 };
 
+
 /*
   This is our postCSS loader which gets fed into the next loader. I'm setting it up in it's own variable because its a didgeridog
 */
@@ -26,7 +27,7 @@ const javascript = {
 const postcss = {
   loader: 'postcss-loader',
   options: {
-    plugins() { return [autoprefixer({ browsers: 'last 2 versions' })]; }
+    plugins() { return [autoprefixer({ browsers: ['last 6 versions', 'ie 10' ] })]; }
   }
 };
 

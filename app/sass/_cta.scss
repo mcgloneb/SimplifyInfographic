@@ -1,20 +1,21 @@
 .cta {
     position: relative;
-    margin-top: 65vw;
+    margin-top: 55vw;
 
     @include screenSm {
         margin-top: 50vw;
     }
 
     @include screenLg {
-        margin-top: 15vw;
+        padding-top: 15vw;
+        margin-top: 0;
     }
 
     @include screenXlg {
-        margin-top: 13vw;
+        padding-top: 13vw;
     }
     @include screenXXlg {
-        margin-top: 205px;
+        padding-top: 205px;
     }
 
     .cta__summary {
@@ -73,7 +74,7 @@
 
         left: 50%;
         top: 0;
-        width: 50vw;
+        width: 45vw;
         transform: translate(-5%, -89%);
         max-width: 346px;
 
