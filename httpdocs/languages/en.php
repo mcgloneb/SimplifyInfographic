@@ -15,18 +15,28 @@
 
 
     $additional = [
-        'summary' => '<h2>SUMMARY</h2><p>Machine learning can simplify your hybrid cloud infrastructure, giving you the freedom to achieve more.</p><p>It can reach into your huge volumes of complex data and pull out the simple truths on application performance – enabling you to improve employee productivity and optimise the customer experience.</p>',
+        'summary' => '<h2>SUMMARY</h2><p>Machine learning can simplify your hybrid cloud infrastructure, giving you the freedom to achieve more. It can reach into your huge volumes of complex data and pull out the simple truths on application performance. Combine this with a smart scaling strategy, and you’ll have the insights you need to stay at peak performance.</p>',
         'cta' => [
-            'Read the full report to simplify your IT operations with next-generation systems management capabilities.',
-            'https://go.oracle.com/LP=60950?elqCampaignId=123274&src1=:ow:lp:cpo::RC_EMMK171027P00022:P3Q3M4_UKIGENiP&intcmp=EMMK171027P00016:ow:lp:cpo::RC_EMMK171027P00022:P3Q3M4_UKIGENiP',
-            'Read the report'
+            [
+                'Read the full report to simplify your IT operations with next-generation systems management capabilities.',
+                'https://go.oracle.com/LP=60950?elqCampaignId=123274&src1=:ow:lp:cpo::RC_EMMK171027P00022:P3Q3M4_UKIGENiP&intcmp=EMMK171027P00016:ow:lp:cpo::RC_EMMK171027P00022:P3Q3M4_UKIGENiP',
+                'Read the report'
+            ],
+            [
+                'Please contact you local Value Added Distributor (VAD) / Partner to arrange a demonstration.',
+                '#',
+                'Contact us'
+            ]
         ],
         'introLine' => '4 steps to improved application performance with machine learning',
         'resources' => 'Additional sources'
     ];
 
     $introScene = [
-        'It takes more than just human intelligence to keep your hybrid cloud applications running at peak performance. Discover four steps to smarter application monitoring – for simpler employee workloads, increased productivity and improved customer satisfaction.'
+        'Five steps to improved application performance with',
+        'machine',
+        'learning',
+        'It takes more than just human intelligence to keep your hybrid cloud applications running at top performance. Here Oracle, in association with Intel<sup>&reg;</sup>, present five steps to smarter application monitoring&mdash;for simpler employee workloads, increased productivity, and reliable performance as you grow.'
     ];
 
     $sceneOne = [
@@ -64,6 +74,19 @@
             'Detecting and troubleshooting anomalies',
             'Forecasting future behaviour to enable intelligent decisions'
         ],
-        'Machine learning is essential for efficient monitoring and increasing application performance.'
+        'Machine learning is essential for efficient application performance monitoring.'
+    ];
 
+    $sceneFive = [
+        'Optimise performance further by scaling correctly',
+        'Not all applications scale the same. To get the most out of performance-intensive applications, you need to identify if they scale <strong>up</strong>, or <strong>out</strong>.',
+        '<strong><i>Scale up</i></strong>',
+        'Applications that need as much CPU and memory as possible, and require a single server. Scale-up applications include:',
+        'Oracle database servers',
+        'Batch computing',
+        '<strong><i>Scale out</i></strong>',
+        'Applications that can run in parallel on multiple servers at the same time. Scale-out applications include:',
+        'Modern web applications',
+        'Big data and analytics',
+        'Combine application monitoring with smart scaling to maintain performance as you grow.'
     ];

@@ -1,0 +1,112 @@
+.header {
+
+  &__bar {
+      background-color: rgba($white, 0.9);
+      height: $headerBarHeight;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 200;
+      box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
+
+
+      .container {
+          height: 100%;
+      }
+
+      @include media-breakpoint-down(sm) {
+          background-color: #ebebeb;
+          box-shadow: none;
+      }
+  }
+
+
+  
+  &__logo {
+      height: 100%;
+      padding: {
+          bottom: 0.5rem;
+          top: 0.5rem;
+      }
+
+      .row {
+          height: 100%;
+      }
+
+      .partner__logo {
+          @extend .col-lg-8, .col-12, .col-md-6;
+
+          align-items: center;
+          display: flex;
+          justify-content: flex-end;
+          height: 100%;
+          
+
+          img {
+              max: {
+                  height: 100%;
+                  width: 100%;
+              }
+
+              @include media-breakpoint-up(md) {
+                  max-height: 70%;
+              }
+          }
+
+          @include media-breakpoint-up(md) {
+              padding-right: 0;
+          }
+
+          @include media-breakpoint-down(sm) {
+              //display: none;
+              // order: 0;
+              margin-top: 0.5rem;
+              justify-content: flex-end;
+              //transform: translateX(100%);
+              position: relative;
+          }
+      }
+
+      &-column {
+          @extend .col-lg-2, .col-md-3, .col-6;
+
+          align-items: center;
+          display: flex;
+          height: 100%;
+
+          span {
+              align-items: center;
+              display: flex;
+              justify-content: center;
+              height: 100%;
+              padding: 0.5rem;
+              width: 25%;
+          }
+
+          img {
+              max: {
+                  height: 100%;
+              }
+              width: 100%;
+          }
+
+          &--large {
+              @extend .col-lg-4;
+          }
+
+          &.oracle-logo {           
+              @include media-breakpoint-down(sm) {
+                  // order: 2;
+              }
+          }
+          &.intel-logo {           
+              @include media-breakpoint-down(sm) {
+                  // order: 1;
+              }
+          }
+
+      }
+  }
+
+}

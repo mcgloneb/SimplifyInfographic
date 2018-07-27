@@ -1,3 +1,11 @@
+#intro_trigger {
+    margin-top: $headerBarHeightSmall;
+    
+    @include screenLg {
+        margin-top: $headerBarHeight;
+    }
+}
+
 .scene {
     margin-top: 50px;
     .scene__header {
@@ -592,232 +600,69 @@
 
     &.scene__five {
         
-        .scene__copy {
-
-            @include flexCenter;
+        .image--one {
+            order: -1;
 
             @include screenLg {
-                display: block;
+                order: 1;
             }
-
         }
 
-        .scene__graphic {
-
-            padding-bottom: 5%;
-
-            @include screenLg {
-                padding-bottom: 0;
-            }
-
+        .image--two {
+            align-items: center;
+            display: flex;
 
             svg {
-
-                width: 80%;
-                display: block;
-                margin: 0 auto;
-
-                @include screenSm {
-                    width: 70%;
-                }
-                @include screenLg {
-                    width: 90%;
-                }
-
+                width: 100%;
             }
-
-
-
-        }
-    }
-
-    &.scene__six {
-
-        .scene__graphic {
 
             @include screenLg {
-                padding-top: 25px;    
-            }
-
-
-             svg {               
-                
-                width: 80%;
-                display: block;
-                margin: 0 auto;
-
-                @include screenSm {
-                    width: 70%;
-                }
-                @include screenLg {
-                    width: 90%;
-                    margin: 0;
-                }
-             
-            }     
-        }
-        .scene__copy {
-
-            @include flexCenter;
-
-            .row:first-of-type {
-                margin-top: 25px;
-                margin-bottom: 25px;
-            }
-
-        }
-    }
-
-
-    &.scene__seven {
-        
-        font-size: 2.5rem;
-
-
-        .scene__graphic-v2 {
-           @extend .col-12; 
-
-            svg {
-                
-                width: 90%;
-                display: block;
-                margin: 0 auto;
-
-                @include screenSm {
+                svg {
                     width: 80%;
-                }
-                @include screenMd {
-                    width: 40%;                  
-                }
+                }   
             }
-
         }
 
-        .scene__copy--one-v2 {
-            @extend .col-6; 
-            padding: 0 5% 0 0;
-            transform: translateY(-25px);
-            
-            @include screenSm {
-                padding: 0 10% 0 5%;
-                transform: translateY(-50px);
+        .row {
+            margin-bottom: 40px;
+
+            &:last-child {
+                margin-bottom: 0;
             }
+        }
+
+        .subtext {
+            background-color: #ebebeb;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .title {
+            font-size: 60px;
+            margin-top: 30px;
+            
             @include screenLg {
-                padding: 0 10%;
-                transform: translateY(-75px);
+                margin-top: 0;
             }
-
-        }
-        
-        .scene__copy--two-v2 {
-            @extend .col-6; 
-            padding: 5% 5% 0 5%;
-            text-align: right;
-            @include screenSm {
-                padding: 5% 0 5% 5%;
-            }
-            @include screenMd {
-                text-align: left;
-                padding: 2% 0 0 10%;
-            }
-            @include screenLg {
-                padding: 2% 10% 0;
-            }
-
-
         }
 
-        .scene__graphic {
-            
+        ul {
+            margin-top: 50px;
 
-            @extend .col-12;
+            li {
+                margin-bottom: 10px;
 
-            margin-top: 15px;
-            padding-bottom: 30vmax;
-            
-            @include screenSm {
-                padding-bottom: 14vh;
-            }
-            @include screenMd {
-                padding-bottom: 20vh;
-            }
-            @include screenLg {
-                padding-bottom: 15vh;
-            }
-            
-            position: relative;
-
-            svg {
-                
-                width: 90%;
-                display: block;
-                margin: 0 auto;
-
-                @include screenSm {
-                    width: 80%;
-                }
-                @include screenMd {
-                    width: 40%;                  
+                font: {
+                    size: 24px;
+                    weight: bold;
                 }
 
-            }
-
-            .scene__copy--one {
-                
-                left: 15px;
-                position: absolute;
-                width: 45%;
-                top: 55%;
-                display: inline-block;
-                
-
-                @include screenSm {
-                     width: 30%;
-                     top: 60%;
-                }
-                @include screenMd {
-                    width: 40%;
-                    left: 7%;
-                    top: 50%;
-                }
-                @include screenLg {
-                    width: 25%;
-                    left: 12%;
-                    top: 56%;
-                }
-            }
-            
-            .scene__copy--two {
-                
-                left: 50%;
-                position: absolute;
-                width: 45%;
-                top: 62%;
-                display: inline-block;
-                text-align: right;
-                
-                @include screenSm {
-                    width: 50%;
-                    left: 50%;
-                    top: 75%;
-                }
-
-                @include screenMd {
-                    text-align: left;
-                    width: 38%;
-                    left: 58%;
-                    top: 75%;
-                }
-                @include screenLg {
-                    width: 35%;              
-                    left: 62%;
-                    top: 75%;
-                }
-                @include screenXlg {
-                    top: 75%;
+                &:after {
+                    margin-bottom: 0;
                 }
             }
         }
+
     }
 
 

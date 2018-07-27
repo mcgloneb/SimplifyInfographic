@@ -25,38 +25,50 @@ include 'languages/'.$lang.'.php';
 
     <body class="<?= $lang; ?>">
 
-        <div class="container" id="intro_trigger">
+        <header class="header">
             
-            <div class="row header">
-                <div class="col-12 p-0">
-                    <a href="#" onclick="window.location=window.location.href;">&nbsp;</a>
-                </div>
-            </div>
-
-            <div class="row scene scene__intrographic">
-                <div class="col-12 p-0" id="intro_graphic_container">
-                    <img src="./images/header.png" />
-                </div>
-            </div>
-        </div>
-
-        <!-- intro line start -->
-        <div class="outer-container">
-            <div class="container">
-                <div class="row scene scene--no-margin">
-                    <div class="col-4 scene__introline">
-                        <?= $additional['introLine']; ?>
+            <div class="header__bar">
+                <div class="container">
+                    <div class="header__logo">
+                        <div class="row">
+                            <span class="header__logo-column oracle-logo">
+                                <img src="images/svg/logo.svg" alt="Logo">
+                            </span>
+                            <span class="header__logo-column intel-logo">
+                                <img src="images/svg/intel.svg" alt="In association with Intel">
+                            </span>
+                            <div class="partner__logo">
+                                <!-- REPLACE IMG SRC BELOW TO UPDATE PARTNER LOGO -->
+                                <img src="images/png/placeholder.png" alt="Your logo here">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- intro line end -->    
+
+        </header>
            
         <div class="container" id="intro_trigger">
             <!-- intro scene start -->
-            <div class="row scene scene__intro scene--no-margin">
-                <div class="col-12 scene__body scene__body--secondary">
-                    <?= $introScene[0]; ?>
+            <div class="row scene intro">
+                <div class="intro__line">
+                    <?= $introScene[0] ?>
+                </div>
+                <div class="intro__copy">
+                    <div class="title">
+                        <div class="title__line title__line--one">
+                            <?= $introScene[1] ?>
+                        </div>
+                        <div class="title__line title__line--two">
+                            <?= $introScene[2] ?>
+                        </div>
+                    </div>
+                    <div class="intro__text">
+                        <?= $introScene[3] ?>
+                    </div>
+                </div>
+                <div class="intro__image">
+                    <?php include 'images/svg/introImage.svg'; ?>
                 </div>
             </div>
             <!-- intro scene end -->
@@ -262,6 +274,66 @@ include 'languages/'.$lang.'.php';
             </div>
             <!-- scene four end -->
 
+            <!-- scene five start -->
+            <div class="row scene scene__five">
+                <div class="col-12 scene__header">
+                    5. <?= $sceneFive[0]; ?>
+                </div>
+                <div class="col-12 scene__body">
+                    <p>
+                        <?= $sceneFive[1]; ?>
+                    </p>
+                    <div class="row">        
+                        <div class="col-lg-6">
+                            <div class="title">
+                                <?= $sceneFive[2]; ?>
+                            </div>
+                            <p>
+                                <?= $sceneFive[3]; ?>
+                            </p>
+                            <ul>
+                                <li>
+                                    <?= $sceneFive[4]; ?>
+                                </li>
+                                <li>
+                                    <?= $sceneFive[5]; ?>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6 image--one">
+                            <?php include 'images/svg/sceneFiveImageOne.svg'; ?>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 image--two">
+                            <?php include 'images/svg/sceneFiveImageTwo.svg'; ?>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="title">
+                                <?= $sceneFive[6]; ?>
+                            </div>
+                            <p>
+                                <?= $sceneFive[7]; ?>
+                            </p>
+                            <ul>
+                                <li>
+                                    <?= $sceneFive[8]; ?>
+                                </li>
+                                <li>
+                                    <?= $sceneFive[9]; ?>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 subtext">
+                            <?= $sceneFive[10]; ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- scene five end -->
+
 
             <!-- summary start -->
             <div class="row scene scene__summary">
@@ -296,34 +368,72 @@ include 'languages/'.$lang.'.php';
         <div class="cta">
 
             <div class="cta__summary">
+
                 <div class="container">
+
                     <div class="row summary__body">
+
                         <div class="col-12 col-lg-7">
-                            <?= $additional['cta'][0]; ?> 
+
+                            <?= $additional['cta'][0][0]; ?>
+
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="cta__button">
-                <div class="container">
-                    <div class="row button__body">
-                        <div class="col-12 col-lg-7">
-                            <a href="<?= $additional['cta'][1]; ?>" target="_blank" class="button">
-                                <?= $additional['cta'][2]; ?>
+
+                        <div class="col-12 col-lg-5">
+
+                            <a href="<?= $additional['cta'][0][1]; ?>" target="_blank" class="button">
+
+                                <?= $additional['cta'][0][2]; ?>
                                 <span><?php include('./images/svg/ctaArrow.php'); ?></span>
+
                             </a>
+
                         </div>
+
                     </div>
+
                 </div>
+
             </div>
-            <?php include('./images/svg/cta.php'); ?>
+
+            <div class="cta__button">
+
+                <div class="container">
+
+                    <div class="row button__body">
+
+                        <div class="col-12 col-lg-7">
+
+                            <?= $additional['cta'][1][0]; ?>
+
+                        </div>
+
+                        <div class="col-12 col-lg-5">
+
+                            <!-- REPLACE A HREF BELOW TO UPDATE PARTNER CONTACT LINK -->
+                            <a href="<?= $additional['cta'][1][1]; ?>" target="_blank" class="button">
+
+                                <?= $additional['cta'][1][2]; ?>
+                                <span><?php include('./images/svg/ctaArrow.php'); ?></span>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
 
         </div>
+
+
         <!-- call to action end -->
 
         <!-- closing comments start -->   
 
-        <div class="container" id="intro_trigger">
+        <div class="container">
             <div class="row scene scene--large-margin scene__footer no-gutters">
                 <div class="col-12">
                     <strong><?= $additional['resources']; ?></strong>
@@ -336,7 +446,7 @@ include 'languages/'.$lang.'.php';
             </div>
             <div class="row scene scene--small-margin scene__footer">
                 <div class="col-sm-8">
-                    Copyright &copy; 2017, Oracle and/or its affiliates. All rights reserved. Oracle and Java are registered trademarks of Oracle and/or its affiliates. Other names may be trademarks of their respective owners.
+                    Copyright &copy; 2018, Oracle and/or its affiliates. All rights reserved. Oracle and Java are registered trademarks of Oracle and/or its affiliates. Other names may be trademarks of their respective owners.
                 </div>
                 <div class="col-sm-4 footer__logo">
                     <div class="logo__image"></div>

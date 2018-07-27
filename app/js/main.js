@@ -95,6 +95,22 @@ const setUpAnimations = () => {
     
 
     /**
+     * Intro Animations
+     */
+
+    const intro = new TimelineMax({
+        repeat: -1
+    });
+
+    intro.set('#introImageCog', {
+        transformOrigin: '50% 50%'
+    })
+    .to('#introImageCog', 4, {
+        rotation: 360,
+        ease: Power0.easeNone
+    });
+
+    /**
      * Scene One
      * Chart Animation
      */
@@ -263,11 +279,47 @@ const setUpAnimations = () => {
     }).setTween(animateChartMagnifyingGlass);
 
 
+    /**
+     * Scene Five
+     */
 
+    if (!detectIE()) {
+        const iconServiceCentre = new TimelineMax({ repeat: -1, repeatDelay: 0 });  
+           iconServiceCentre
+            .set('#iconServiceCentreServ4', { transformOrigin : '50% 50%' })
+            .to('#iconServiceCentreServ1', 0.5, { x: '+=128', y: '-=50', scale: 1.44})
+            .to('#iconServiceCentreServ2', 0.5, { x: '+=53.8', y: '-=23.4', scale: 1.2})
+            .to('#iconServiceCentreServ3', 0.5, { x: '+=45', y: '-=20', scale: 1.2})
+            .fromTo('#iconServiceCentreServ4', 0.5, { visibility: 'hidden' }, { visibility: 'visible', x: '+=42', y: '-=5.1', scale: 1.2 });       
+    }
 
+    const sceneFiveArrowsAnimation = new TimelineMax({
+        repeat: -1,
+        repeatDelay: 1
+    });
 
-
-
+    sceneFiveArrowsAnimation.to('#sceneFiveImageTwoArrowOne', 0.7, {
+        x: 250,
+        opacity: 0
+    })
+    .to('#sceneFiveImageTwoArrowTwo', 0.7, {
+        x: 350,
+        opacity: 0
+    }, '-=0.2')
+    .set('#sceneFiveImageTwoArrowOne', {
+        x: -250
+    })
+    .set('#sceneFiveImageTwoArrowTwo', {
+        x: -350
+    })
+    .to('#sceneFiveImageTwoArrowOne', 0.7, {
+        x: 0,
+        opacity: 1
+    })
+    .to('#sceneFiveImageTwoArrowTwo', 0.7, {
+        x: 0,
+        opacity: 1
+    }, '-=0.2');
 
     const scroll = new ScrollMagic.Controller();
 

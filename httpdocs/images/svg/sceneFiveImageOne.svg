@@ -1,0 +1,84 @@
+<svg version="1.1" id="CloudWarehouse2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     x="0px" y="0px" viewBox="0 0 331 223" style="enable-background:new 0 0 331 223;overflow:visible" xml:space="preserve">
+    
+    <defs>
+        <ClipPath id="CloudWarehouseClip">
+            <rect x="48" y="80" width="50" height="130"/>
+        </ClipPath>
+        <ClipPath id="CloudWarehouseClip2">
+            <rect x="146" y="0" width="126" height="268"/>
+        </ClipPath>
+    </defs>
+    <g>
+        <g id="iconServiceCentreServ4" style="visibility: hidden;">
+            <polygon style="display:inline;fill:#DEE0E0;" points="43,96.6 11.1,108.7 11.1,200 43,204    "/>
+            <polygon style="display:inline;fill:#FFFFFF;" points="39.2,165.4 16.6,166.9 16.6,156.8 39.2,154.1   "/>
+            <polygon style="display:inline;fill:#939699;" points="39.2,111.7 16.6,118.8 16.6,116.7 39.2,109.3   "/>
+            <polygon style="display:inline;fill:#939699;" points="39.2,129.6 16.6,134.8 16.6,132.7 39.2,127.2   "/>
+            <polygon style="display:inline;fill:#939699;" points="39.2,174.3 16.6,174.9 16.6,172.8 39.2,172     "/>
+            <polygon style="display:inline;fill:#939699;" points="39.2,183.3 16.6,182.9 16.6,180.8 39.2,180.9   "/>
+            <polygon style="display:inline;fill:#939699;" points="39.2,192.2 16.6,190.9 16.6,188.8 39.2,189.9   "/>
+            <polygon style="display:inline;fill:#939699;" points="22,123.1 16.6,124.7 16.6,126.8 22,125.3   "/>
+            <polygon style="display:inline;fill:#939699;" points="32.8,120.1 32.8,122.4 39.2,120.6 39.2,118.3   "/>
+            <polygon style="display:inline;fill:#F80000;" points="30.4,126.4 24.2,128 24.2,119.2 30.4,117.4     "/>
+            <polygon style="display:inline;fill:#FFFFFF;" points="39.2,147.5 16.6,150.8 16.6,140.7 39.2,136.1   "/>
+            <g style="display:inline;">
+                <path style="fill:#B9BBBD;" d="M43,96.6l-31.9,12.1v4.3l0,0v85.5l0,0v1.5l31.9,4l21.8-4v-91.3L43,96.6z M43,199.5l-28.5-3v-85.2
+                    L43,101.1V199.5z"/>
+            </g>
+        </g>
+    </g>
+    <g id="iconServiceCentreServ3">
+        <polygon style="fill:#DEE0E0;" points="86,80.5 47.7,95 47.7,204.7 86,209.5  "/>
+        <polygon style="fill:#FFFFFF;" points="81.5,163.1 54.4,164.9 54.4,152.8 81.5,149.6  "/>
+        <polygon style="fill:#939699;" points="81.5,98.6 54.4,107.1 54.4,104.6 81.5,95.8    "/>
+        <polygon style="fill:#939699;" points="81.5,120.1 54.4,126.4 54.4,123.8 81.5,117.3  "/>
+        <polygon style="fill:#939699;" points="81.5,173.8 54.4,174.5 54.4,172 81.5,171  "/>
+        <polygon style="fill:#939699;" points="81.5,184.6 54.4,184.2 54.4,181.6 81.5,181.8  "/>
+        <polygon style="fill:#939699;" points="81.5,195.3 54.4,193.8 54.4,191.3 81.5,192.5  "/>
+        <polygon style="fill:#939699;" points="60.9,112.4 54.4,114.2 54.4,116.7 60.9,115    "/>
+        <polygon style="fill:#939699;" points="73.8,108.7 73.8,111.4 81.5,109.3 81.5,106.5  "/>
+        <polygon style="fill:#F80000;" points="71,116.3 63.5,118.2 63.5,107.7 71,105.4  "/>
+        <polygon style="fill:#FFFFFF;" points="81.5,141.6 54.4,145.6 54.4,133.5 81.5,128    "/>
+        <g>
+            <path style="fill:#B9BBBD;" d="M86,80.5L47.7,95.1v5.2l0,0v102.7l0,0v1.7l38.3,4.8l26.2-4.9V95L86,80.5z M86.1,204.1l-34.3-3.6
+                V98.2l34.3-12.3V204.1z"/>
+        </g>
+    </g>
+    <g id="iconServiceCentreServ2">
+        <polygon style="fill:#DEE0E0;" points="138.7,60.5 92.7,77.9 92.7,209.5 138.7,215.3  "/>
+        <polygon style="fill:#FFFFFF;" points="133.2,159.6 100.7,161.7 100.7,147.2 133.2,143.3  "/>
+        <polygon style="fill:#939699;" points="133.2,82.2 100.7,92.4 100.7,89.4 133.2,78.8  "/>
+        <polygon style="fill:#939699;" points="133.2,108 100.7,115.5 100.7,112.5 133.2,104.6    "/>
+        <polygon style="fill:#939699;" points="133.2,172.5 100.7,173.3 100.7,170.2 133.2,169.1  "/>
+        <polygon style="fill:#939699;" points="133.2,185.4 100.7,184.8 100.7,181.8 133.2,182    "/>
+        <polygon style="fill:#939699;" points="133.2,198.3 100.7,196.4 100.7,193.4 133.2,194.9  "/>
+        <polygon style="fill:#939699;" points="108.5,98.7 100.7,100.9 100.7,104 108.5,101.8     "/>
+        <polygon style="fill:#939699;" points="124,94.3 124,97.6 133.2,95.1 133.2,91.7  "/>
+        <polygon style="fill:#F80000;" points="120.6,103.4 111.7,105.7 111.7,93.1 120.6,90.4    "/>
+        <polygon style="fill:#FFFFFF;" points="133.2,133.8 100.7,138.6 100.7,124 133.2,117.5    "/>
+        <g>
+            <path style="fill:#B9BBBD;" d="M138.7,60.5l-46,17.5v6.3l0,0v123.2l0,0v2.1l46,5.8l31.4-5.8V77.9L138.7,60.5z M138.7,208.8
+                l-41.1-4.3V81.7l41.1-14.7V208.8z"/>
+        </g>
+    </g>
+    <g clip-path="url(#CloudWarehouseClip2)">
+        <g id="iconServiceCentreServ1">
+            <polygon style="fill:#DEE0E0;" points="201.7,37 146.5,58 146.5,216.1 201.7,223  "/>
+            <polygon style="fill:#FFFFFF;" points="195.2,156.1 156.1,158.7 156.1,141.2 195.2,136.6  "/>
+            <polygon style="fill:#939699;" points="195.2,63.1 156.1,75.4 156.1,71.7 195.2,59    "/>
+            <polygon style="fill:#939699;" points="195.2,94.1 156.1,103.2 156.1,99.5 195.2,90   "/>
+            <polygon style="fill:#939699;" points="195.2,171.6 156.1,172.6 156.1,168.9 195.2,167.5  "/>
+            <polygon style="fill:#939699;" points="195.2,187.1 156.1,186.4 156.1,182.8 195.2,183    "/>
+            <polygon style="fill:#939699;" points="195.2,202.6 156.1,200.3 156.1,196.7 195.2,198.5  "/>
+            <polygon style="fill:#939699;" points="165.5,82.9 156.1,85.6 156.1,89.3 165.5,86.7  "/>
+            <polygon style="fill:#939699;" points="184.1,77.7 184.1,81.6 195.2,78.6 195.2,74.5  "/>
+            <polygon style="fill:#F80000;" points="180,88.6 169.2,91.4 169.2,76.2 180,73    "/>
+            <polygon style="fill:#FFFFFF;" points="195.2,125.1 156.1,130.9 156.1,113.4 195.2,105.5  "/>
+            <g>
+                <path style="fill:#B9BBBD;" d="M201.7,37l-55.2,21v7.5l0,0v148l0,0v2.5l55.2,7l37.8-7V57.9L201.7,37z M201.7,215.2l-49.4-5.2V62.5
+                    l49.4-17.7V215.2z"/>
+            </g>
+        </g>
+    </g>
+</svg>
